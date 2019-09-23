@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Flier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Flier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Flier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Flier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/MissionFileReader/MissionFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/MissionFileReader/MissionFileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/parseCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/parseCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/parseXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/parseXML.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +61,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Namita Raghuvanshi\IdeaProjects\DroneMission\src" />
     </key>
   </component>
   <component name="RunDashboard">
