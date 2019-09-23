@@ -4,6 +4,7 @@ import Mission.DroneFlyBehaviour;
 import Mission.MissionFlipForward;
 import Mission.MissionFlyBackward;
 import Mission.MissionFlyForward;
+import MissionFileReader.MissionFileReader;
 
 
 public class Flier {
@@ -17,8 +18,12 @@ public class Flier {
         communicator.initiation();
 //        this.droneFlyBehaviour=droneFlyBehaviour;
     }
-    public void performMission(DroneFlyBehaviour droneFlyBehaviour) throws Exception {
-        droneFlyBehaviour.performMission(communicator);
+//    public void performMission(DroneFlyBehaviour droneFlyBehaviour) throws Exception {
+//        droneFlyBehaviour.performMission(communicator);
+//    }
+
+    public void parseFile(MissionFileReader missionFileReader) throws Exception {
+        missionFileReader.parseFile(communicator);
     }
 
 }
