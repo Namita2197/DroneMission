@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Flier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Flier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/MissionFileReader/MissionFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/MissionFileReader/MissionFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/parseCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/parseCSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionFileReader/parseXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/parseXML.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Problem3NM" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -175,7 +170,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
