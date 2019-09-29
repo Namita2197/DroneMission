@@ -18,10 +18,10 @@ abstract public class MissionFileReader {
             } else if(messageArray[i].equals("land")){
                 instruction= new Land();
                 instruction.executeInstruction(communicator);
-            }else if(messageArray[i].equals("back 25")){
+            }else if(messageArray[i].equals("back")){
                 instruction= new ShiftBackward();
                 instruction.executeInstruction(communicator);
-            } else if(messageArray[i].equals("forward 25")){
+            } else if(messageArray[i].equals("forward")){
                 instruction= new ShiftForward();
                 instruction.executeInstruction(communicator);
             }
