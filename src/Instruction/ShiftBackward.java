@@ -17,4 +17,9 @@ public class ShiftBackward extends Instruction {
         communicator.sendSignal(instruction);
         Thread.sleep(2000);
     }
+
+    @Override
+    public String getMessageType() {
+        return null;
+    }
 }

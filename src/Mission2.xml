@@ -1,5 +1,5 @@
 <task>
-	<message>takeoff</message>
-	<message>back</message>
-	<message>land</message>
+	<instruction>takeoff</instruction>
+	<instruction>back</instruction>
+	<instruction>land</instruction>
 </task>

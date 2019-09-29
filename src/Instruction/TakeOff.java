@@ -14,4 +14,9 @@ public class TakeOff extends Instruction {
         communicator.sendSignal("takeoff");
         Thread.sleep(2000);
     }
+
+    @Override
+    public String getMessageType() {
+        return null;
+    }
 }

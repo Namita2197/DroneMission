@@ -18,4 +18,9 @@ public class ShiftForward extends Instruction {
         communicator.sendSignal(instruction);
         Thread.sleep(2000);
     }
+
+    @Override
+    public String getMessageType() {
+        return null;
+    }
 }

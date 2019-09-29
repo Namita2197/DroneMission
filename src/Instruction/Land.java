@@ -13,4 +13,9 @@ public class Land extends Instruction {
         communicator.sendSignal("land");
         Thread.sleep(2000);
     }
+
+    @Override
+    public String getMessageType() {
+        return null;
+    }
 }
