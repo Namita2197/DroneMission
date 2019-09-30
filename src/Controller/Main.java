@@ -51,7 +51,9 @@ public class Main {
 //        }
 
         Flier flier = new Flier();
+        Thread thread=new Thread(flier);
         flier.initiation(iPAddress,dronePort);
+        thread.start();
        // flier.performMission(droneFlyBehaviour);
         flier.parseFile(missionFileReader);
     }

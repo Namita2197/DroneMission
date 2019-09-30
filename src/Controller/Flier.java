@@ -7,10 +7,12 @@ import Mission.MissionFlyForward;
 import MissionFileReader.MissionFileReader;
 
 
-public class Flier {
+public class Flier implements Runnable{
 
 //    private DroneFlyBehaviour droneFlyBehaviour;
     Communicator communicator;
+
+    //thread.start();
 
 
     public void initiation(String iPAddress,int dronePort) throws Exception {
@@ -26,4 +28,9 @@ public class Flier {
         missionFileReader.parseFile(communicator);
     }
 
+    @Override
+    public void run() {
+        
+
+    }
 }
