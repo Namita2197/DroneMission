@@ -12,6 +12,7 @@ abstract public class MissionFileReader {
     public void executeTask(Communicator communicator, String[] messageArray) throws Exception {
         Instruction instruction;
         for(int i=0; i<messageArray.length; i++){
+            System.out.println(messageArray[i]);
             if(messageArray[i].equals("takeoff")){
                 instruction= new TakeOff();
                 instruction.executeInstruction(communicator);

@@ -15,6 +15,7 @@ public class ShiftBackward extends Instruction {
         int distance=sc.nextInt();
         String instruction = "back "+distance;
         communicator.sendSignal(instruction);
+        System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
     }
 

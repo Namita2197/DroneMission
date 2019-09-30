@@ -1,5 +1,6 @@
 package Controller;
 
+import Instruction.Status;
 import Mission.DroneFlyBehaviour;
 import Mission.MissionFlipForward;
 import Mission.MissionFlyBackward;
@@ -11,6 +12,7 @@ public class Flier implements Runnable{
 
 //    private DroneFlyBehaviour droneFlyBehaviour;
     Communicator communicator;
+    Status status;
 
     //thread.start();
 
@@ -30,7 +32,23 @@ public class Flier implements Runnable{
 
     @Override
     public void run() {
-        
+        Communicator communicator= null;
+        //Status status;
+        try {
+            communicator = new Communicator(8890);
+            while(true) {
+                String updatedStatus = communicator.receiveSignal();
+                //status.parseData(updatedStatus);
+                this.status = new Status(updatedStatus);
+//                System.out.println(status.getBatteryPercentage());
+                Thread.sleep(100);
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
 }

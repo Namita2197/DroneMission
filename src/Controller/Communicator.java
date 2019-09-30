@@ -69,7 +69,7 @@ public class Communicator {
         bytesToSent = request.getBytes(StandardCharsets.UTF_8);
         DatagramPacket datagramPacket = new DatagramPacket(bytesToSent, bytesToSent.length, address, portNumber);
         udpClient.send(datagramPacket);
-        System.out.println("Sent " + request + " bytes to " + address.toString() + ":" + portNumber);
+//        System.out.println("Sent " + request + " bytes to " + address.toString() + ":" + portNumber);
     }
 
 
@@ -87,7 +87,7 @@ public class Communicator {
             datagramPacket = null;
         }
         if (datagramPacket != null) {
-            System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
+//            System.out.println(String.format("Received %d bytes", datagramPacket.getLength()));
             reply = new String(bytesReceived, 0, datagramPacket.getLength(), StandardCharsets.UTF_8);
         }
         return reply;

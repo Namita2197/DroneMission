@@ -12,6 +12,7 @@ public class TakeOff extends Instruction {
     @Override
     public void executeInstruction(Communicator communicator) throws Exception {
         communicator.sendSignal("takeoff");
+        System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
     }
 

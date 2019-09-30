@@ -16,6 +16,7 @@ public class FlipForward extends Instruction {
         int distance=sc.nextInt();
         String instruction = "flip "+distance;
         communicator.sendSignal(instruction);
+        System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
     }
 

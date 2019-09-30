@@ -11,6 +11,7 @@ public class Land extends Instruction {
     @Override
     public void executeInstruction(Communicator communicator) throws Exception {
         communicator.sendSignal("land");
+        System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
     }
 

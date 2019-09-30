@@ -1,5 +1,7 @@
 package Controller;
 
+import Instruction.Status;
+
 import java.util.Date;
 
 public class DroneState {

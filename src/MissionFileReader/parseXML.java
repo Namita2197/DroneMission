@@ -15,7 +15,7 @@ public class parseXML extends MissionFileReader {
         Document document = builder.parse(new File("src/Mission2.xml"));
         document.getDocumentElement().normalize();
 
-        NodeList messageList = document.getElementsByTagName("message");
+        NodeList messageList = document.getElementsByTagName("instruction");
         // visitChildNodes(messageList);
         String[] messageArray;
         messageArray = new String[messageList.getLength()];

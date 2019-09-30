@@ -16,6 +16,7 @@ public class ShiftForward extends Instruction {
         int distance=sc.nextInt();
         String instruction = "forward "+distance;
         communicator.sendSignal(instruction);
+        System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
     }
 
