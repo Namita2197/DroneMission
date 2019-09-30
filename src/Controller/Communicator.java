@@ -37,7 +37,7 @@ public class Communicator {
 
 
 
-        System.out.println("Put drone in command mode...");
+        //System.out.println("Put drone in command mode...");
         int maxRetries = 3;
         while (maxRetries > 0) {
             sendSignal("command");

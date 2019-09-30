@@ -20,7 +20,9 @@ public class DroneSimulator implements Runnable {
             InetAddress address = communicator.getAddress();
             int portNumber = communicator.getPortNumber();
             communicator.setAddress(address, portNumber);
-            communicator.sendSignal("ok");
+            //communicator.sendSignal("ok");
+            MessageManager messageManager=new MessageManager(reply,communicator);
+            messageManager.selectMessage();
         }
     }
 
