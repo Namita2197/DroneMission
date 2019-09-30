@@ -1,10 +1,12 @@
 package DroneSimulator;
 
 import Controller.Communicator;
+import Instruction.Status;
 
 public class MessageManager {
     String reply;
     Communicator communicator;
+    Status status=new Status();
     public MessageManager(String reply, Communicator communicator){
         this.communicator=communicator;
         this.reply=reply;
@@ -29,7 +31,13 @@ public class MessageManager {
        }else if(replyArray[0].equals("command")){
            System.out.println("Drone in command mode");
            communicator.sendSignal("ok");
-       }else{
+       }else if(replyArray[0].equals("battery?")){
+            System.out.println("battery query");
+           // status =new Status();
+            //int batteryPercentage=status.getBatteryPercentage();
+            communicator.sendSignal("ok");
+            //communicator.sendSignal("battery:"+batteryPercentage);
+        }else{
            System.out.println("Unrecognised command");
            communicator.sendSignal("error");
        }

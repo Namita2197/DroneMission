@@ -12,8 +12,8 @@ public class Flier implements Runnable{
 
 //    private DroneFlyBehaviour droneFlyBehaviour;
     Communicator communicator;
-    Status status;
 
+    Status status;
     //thread.start();
 
 

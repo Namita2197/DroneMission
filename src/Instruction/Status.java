@@ -4,6 +4,10 @@ import Controller.Communicator;
 import Controller.StringUtils;
 
 public class Status extends Instruction{
+    public Status() {
+
+    }
+
     public static String getKeyWord() { return "mid"; }
 
     private Integer pitch;

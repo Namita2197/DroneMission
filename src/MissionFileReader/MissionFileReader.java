@@ -25,8 +25,12 @@ abstract public class MissionFileReader {
             } else if(messageArray[i].equals("forward")){
                 instruction= new ShiftForward();
                 instruction.executeInstruction(communicator);
+            }else if(messageArray[i].equals("battery?")){
+                instruction= new Battery();
+                instruction.executeInstruction(communicator);
             }
         }
     }
 
 }
+

@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Communicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Communicator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/DroneSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/DroneSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Communicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/MessageManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Mission1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Mission1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/MissionFileReader/MissionFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Flier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Flier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DroneSimulator/DroneSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/DroneSimulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/MessageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Instruction/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mission1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TreeGrading" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -76,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DroneSimulator">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="DroneSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DroneSimulator.DroneSimulator" />
       <module name="DroneMission" />
@@ -144,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DroneSimulator" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DroneSimulator" />
         <item itemvalue="JUnit.TakeOffTest" />
         <item itemvalue="JUnit.CommunicatorTest" />
         <item itemvalue="JUnit.FlierTest" />
