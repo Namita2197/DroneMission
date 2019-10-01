@@ -32,7 +32,7 @@ public abstract class DroneFlyBehaviour {
             instruction.executeInstruction(communicator, droneState);
         }
     }
-    public abstract void performMission();
+    public abstract void performMission() throws Exception;
 
     public void droneLanding() throws Exception {
         instruction = new Land();
