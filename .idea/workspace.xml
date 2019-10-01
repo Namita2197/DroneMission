@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/MessageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Communicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Communicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Flier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Flier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/DroneSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/DroneSimulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/Battery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Instruction/Battery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Communicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Flier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Flier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/DroneSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/DroneSimulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Instruction/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.DroneSimulator">
     <configuration name="DroneSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DroneSimulator.DroneSimulator" />
       <module name="DroneMission" />

@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args)throws Exception{
 
-        MissionFileReader missionFileReader=null;
+        MissionFileReader missionFileReader;
         DroneState droneState=new DroneState();
         Flier flier = new Flier(droneState);
         Thread thread=new Thread(flier);
@@ -38,7 +38,5 @@ public class Main {
         }else{
             System.out.println("INVALID INPUT");
         }
-
     }
-
 }

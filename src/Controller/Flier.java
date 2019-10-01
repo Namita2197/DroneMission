@@ -10,11 +10,11 @@ import MissionFileReader.MissionFileReader;
 
 public class Flier implements Runnable{
 
-//    private DroneFlyBehaviour droneFlyBehaviour;
     Communicator communicator;
     Status status;
     DroneState droneState;
     DroneFlyBehaviour droneFlyBehaviour;
+
     public Flier(DroneState droneState){
         this.droneState=droneState;
     }
@@ -23,7 +23,6 @@ public class Flier implements Runnable{
         communicator= new Communicator(iPAddress,dronePort);
         communicator.initiation();
         droneState.setInCommandMode(true);
-//        this.droneFlyBehaviour=droneFlyBehaviour;
     }
 
     public void performExistingMission(int missionNumber) throws Exception {
@@ -53,10 +52,8 @@ public class Flier implements Runnable{
             communicator = new Communicator(8890);
             while(true) {
                 String updatedStatus = communicator.receiveSignal();
-                //status.parseData(updatedStatus);
                 this.status = new Status(updatedStatus);
                 droneState.updateFlyingInfo(status);
-//                System.out.println(status.getBatteryPercentage());
                 Thread.sleep(100);
             }
         } catch (Exception e) {
