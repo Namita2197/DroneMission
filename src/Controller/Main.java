@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args)throws Exception{
-        DroneFlyBehaviour droneFlyBehaviour = null;
+       // DroneFlyBehaviour droneFlyBehaviour = null;
         MissionFileReader missionFileReader=null;
         DroneState droneState=new DroneState();
         Flier flier = new Flier(droneState);
@@ -40,7 +40,7 @@ public class Main {
             System.out.println("Choose any mission:\n1.Make the drone flip forward\n2.Make the drone fly backwards\n3.Make the drone fly forward");
             int missionNumber=scanner.nextInt();
             //Flier flier=new Flier();
-            flier.performExistingMission(missionNumber,droneFlyBehaviour);
+            flier.performExistingMission(missionNumber);
 
             
             

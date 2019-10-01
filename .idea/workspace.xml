@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Flier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Flier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mission/DroneFlyBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission/DroneFlyBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mission/MissionFlipForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission/MissionFlipForward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mission/MissionFlyBackward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission/MissionFlyBackward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mission/MissionFlyForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mission/MissionFlyForward.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

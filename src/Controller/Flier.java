@@ -18,6 +18,7 @@ public class Flier implements Runnable{
     Communicator communicator;
     Status status;
     DroneState droneState;
+    DroneFlyBehaviour droneFlyBehaviour;
     public Flier(DroneState droneState){
         this.droneState=droneState;
     }
@@ -31,20 +32,21 @@ public class Flier implements Runnable{
 //        this.droneFlyBehaviour=droneFlyBehaviour;
     }
 
-    public void performExistingMission(int missionNumber, DroneFlyBehaviour droneFlyBehaviour){
+    public void performExistingMission(int missionNumber){
 
         if(missionNumber==1) {
             droneFlyBehaviour =new MissionFlipForward();
-            droneFlyBehaviour.missionTemplate();
         }
         else if(missionNumber==2){
             droneFlyBehaviour = new MissionFlyBackward();
-            droneFlyBehaviour.missionTemplate();
         }
         else if(missionNumber==3){
             droneFlyBehaviour = new MissionFlyForward();
-            droneFlyBehaviour.missionTemplate();
         }
+        droneFlyBehaviour.setCommunicator(communicator);
+        droneFlyBehaviour.setDroneState(droneState);
+        droneFlyBehaviour.missionTemplate();
+
 
 
     }
