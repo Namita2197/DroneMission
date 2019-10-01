@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/DroneSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/DroneSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Mission/DroneFlyBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Flier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Flier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/DroneSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/DroneSimulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Instruction/ShiftForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/ShiftForward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Instruction/TakeOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/TakeOff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

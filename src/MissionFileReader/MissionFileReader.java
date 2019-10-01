@@ -32,9 +32,10 @@ abstract public class MissionFileReader {
                 }else {
                     System.out.println(messageArray[i]);
                     if (messageArray[i].equals("takeoff")) {
+                        droneState.setHasTakenOff(true);
                         instruction = new TakeOff();
                         instruction.executeInstruction(communicator,droneState);
-                        droneState.setHasTakenOff(true);
+
                     } else if (messageArray[i].equals("land")) {
                         instruction = new Land();
                         instruction.executeInstruction(communicator,droneState);

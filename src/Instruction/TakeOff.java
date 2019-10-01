@@ -12,7 +12,11 @@ public class TakeOff extends Instruction {
 
     @Override
     public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
+        double zCoordinate;
+        zCoordinate=droneState.getPositionZ();
         communicator.sendSignal("takeoff");
+        zCoordinate=zCoordinate+70.00;
+        droneState.move(0.00,0.00,zCoordinate);
         System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
     }
