@@ -4,38 +4,29 @@ import Controller.Communicator;
 import Controller.DroneState;
 import Instruction.Instruction;
 import Instruction.*;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 abstract public class MissionFileReader {
 
     public abstract void parseFile(Communicator communicator, DroneState droneState) throws Exception;
     public void executeTask(Communicator communicator, String[] messageArray, DroneState droneState) throws Exception {
         Instruction instruction;
-        //System.out.println(droneState.getBatteryPercentage());
 
-
-            for(int i=0; i<messageArray.length; i++) {
-                if(droneState.getBatteryPercentage()<=7||droneState.getHighTemperature()>=70){
-                    if(droneState.hasTakenOff()==true){
+        for(int i=0; i<messageArray.length; i++) {
+            if(droneState.getBatteryPercentage()<=7||droneState.getHighTemperature()>=70){
+                if(droneState.hasTakenOff()==true){
                         System.out.println("Low Battery!\nDrone is landing now...");
                         instruction = new Land();
                         instruction.executeInstruction(communicator,droneState);
-
-                    }else{
+                }else{
                         System.out.println("Battery Low! or Temperature too high for a flight!\nMission Aborted.");
-                    }
-
-                    break;
-
-//
-                }else {
+                }
+                break;
+            }else{
                     System.out.println(messageArray[i]);
                     if (messageArray[i].equals("takeoff")) {
                         droneState.setHasTakenOff(true);
                         instruction = new TakeOff();
                         instruction.executeInstruction(communicator,droneState);
-
                     } else if (messageArray[i].equals("land")) {
                         instruction = new Land();
                         instruction.executeInstruction(communicator,droneState);
@@ -60,8 +51,8 @@ abstract public class MissionFileReader {
                             instruction.executeInstruction(communicator,droneState);
                         }
                     }
-                }
             }
+        }
 
     }
 

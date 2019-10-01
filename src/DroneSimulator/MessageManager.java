@@ -5,9 +5,10 @@ import Controller.DroneState;
 import Instruction.Status;
 
 public class MessageManager {
-    String reply;
     Communicator communicator;
-    Status status;
+    String reply;
+
+   // Status status;
     public MessageManager(String reply, Communicator communicator){
         this.communicator=communicator;
         this.reply=reply;
@@ -17,7 +18,7 @@ public class MessageManager {
        String[] replyArray= reply.split(" ");
 
         DroneSimulator droneSimulator= new DroneSimulator();
-        DroneState droneState= droneSimulator.getDroneState();
+       // DroneState droneState= droneSimulator.getDroneState();
        if(replyArray[0].equals("takeoff")){
            System.out.println("Drone has taken off");
            communicator.sendSignal("ok");

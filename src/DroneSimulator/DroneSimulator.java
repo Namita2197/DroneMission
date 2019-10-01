@@ -44,7 +44,7 @@ public class DroneSimulator implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Status status = new Status(20,12,67,18,16,14,12,10,39,66,80,56.89,65,7.9,5.0,8.0);
+        Status status = new Status(20,12,67,18,16,14,12,10,39,66,9,56.89,65,7.9,5.0,8.0);
         //
         droneState.updateFlyingInfo(status);
         String updateStatus=status.getMessageText();
