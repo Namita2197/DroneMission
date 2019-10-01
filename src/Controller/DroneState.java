@@ -113,9 +113,9 @@ public class DroneState {
         double rotatedX = Math.cos(rotation) * deltaX - Math.sin(rotation) * deltaY;
         double rotatedY = Math.sin(rotation) * deltaX + Math.cos(rotation) * deltaY;
 
-        positionX += rotatedX;
-        positionY += rotatedY;
-        positionZ += deltaZ;
+        positionX = rotatedX;
+        positionY = rotatedY;
+        positionZ = deltaZ;
     }
 
     public void rotate(int deltaOrientation) {

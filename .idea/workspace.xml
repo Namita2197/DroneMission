@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Instruction/ShiftForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/ShiftForward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/DroneState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/DroneState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/FlipForward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Instruction/FlipForward.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Instruction/Land.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/ShiftBackward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Instruction/ShiftBackward.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/ShiftForward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Instruction/ShiftForward.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Instruction/TakeOff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Instruction/TakeOff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DroneState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DroneState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Instruction/TakeOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/TakeOff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionFileReader/MissionFileReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
