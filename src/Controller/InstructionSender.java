@@ -8,14 +8,14 @@ import Mission.MissionFlyForward;
 import MissionFileReader.MissionFileReader;
 
 
-public class Flier implements Runnable{
+public class InstructionSender {
 
     Communicator communicator;
-    Status status;
+
     DroneState droneState;
     DroneFlyBehaviour droneFlyBehaviour;
 
-    public Flier(DroneState droneState){
+    public InstructionSender(DroneState droneState){
         this.droneState=droneState;
     }
 
@@ -45,19 +45,5 @@ public class Flier implements Runnable{
         missionFileReader.parseFile(communicator,droneState);
     }
 
-    @Override
-    public void run() {
-        Communicator communicator;
-        try {
-            communicator = new Communicator(8890);
-            while(true) {
-                String updatedStatus = communicator.receiveSignal();
-                this.status = new Status(updatedStatus);
-                droneState.updateFlyingInfo(status);
-                Thread.sleep(100);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+
 }

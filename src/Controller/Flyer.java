@@ -3,14 +3,15 @@ package Controller;
 import MissionFileReader.*;
 import java.util.Scanner;
 
-public class Main {
+public class Flyer {
 
     public static void main(String[] args)throws Exception{
 
         MissionFileReader missionFileReader;
         DroneState droneState=new DroneState();
-        Flier flier = new Flier(droneState);
-        Thread thread=new Thread(flier);
+        StateReceiver stateReceiver= new StateReceiver(droneState);
+
+        Thread thread=new Thread(stateReceiver);
         Scanner scanner = new Scanner(System.in);
       
         System.out.println("Enter IP Address");
@@ -19,7 +20,8 @@ public class Main {
         System.out.println("Enter Port Number");
         int dronePort = scanner.nextInt();
 
-        flier.initiation(iPAddress,dronePort);
+        InstructionSender instructionSender = new InstructionSender(droneState);
+        instructionSender.initiation(iPAddress,dronePort);
         thread.start();
 
         Thread.sleep(4000);
@@ -27,14 +29,14 @@ public class Main {
         int fileType= scanner.nextInt();
         if(fileType==1){
             missionFileReader =new parseXML();
-            flier.parseFile(missionFileReader);
+            instructionSender.parseFile(missionFileReader);
         }else if(fileType==2){
             missionFileReader =new parseCSV();
-            flier.parseFile(missionFileReader);
+            instructionSender.parseFile(missionFileReader);
         }else if(fileType==3){
             System.out.println("Choose any mission:\n1.Make the drone flip forward\n2.Make the drone fly backwards\n3.Make the drone fly forward");
             int missionNumber=scanner.nextInt();
-            flier.performExistingMission(missionNumber);
+            instructionSender.performExistingMission(missionNumber);
         }else{
             System.out.println("INVALID INPUT");
         }
