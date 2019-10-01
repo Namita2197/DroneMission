@@ -9,12 +9,12 @@ public class MissionFlipForward extends DroneFlyBehaviour {
 
     @Override
     public void performMission(){
-        Instruction instruction;
-        instruction = new TakeOff();
-        instruction.executeInstruction(communicator);
+//        Instruction instruction;
+//        instruction = new TakeOff();
+//        instruction.executeInstruction(communicator);
         instruction = new FlipForward();
         instruction.executeInstruction(communicator);
-        instruction = new Land();
-        instruction.executeInstruction(communicator);
+//        instruction = new Land();
+//        instruction.executeInstruction(communicator);
     }
 }

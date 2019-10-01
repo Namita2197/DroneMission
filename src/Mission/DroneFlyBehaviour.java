@@ -2,16 +2,14 @@ package Mission;
 
 import Controller.Communicator;
 import Controller.DroneState;
-import Instruction.Instruction;
+import Instruction.*;
 
 public abstract class DroneFlyBehaviour {
 
-    Instruction instruction;
     Communicator communicator;
     DroneState droneState;
-    public DroneFlyBehaviour(){
+    Instruction instruction;
 
-    }
     public void setCommunicator(Communicator communicator){
         this.communicator=communicator;
     }
@@ -19,22 +17,26 @@ public abstract class DroneFlyBehaviour {
         this.droneState=droneState;
     }
 
-    public final void missionTemplate(){
+    public final void missionTemplate() throws Exception {
         droneTakeoff();
         performMission();
         droneLanding();
     }
+    public void droneTakeoff() throws Exception {
 
-    //public void performMission();
-
-    public void droneTakeoff(){
-
+        if (droneState.getBatteryPercentage() <= 7 || droneState.getHighTemperature() >= 70) {
+            System.out.println("Battery Low! or Temperature too high for a flight!\nMission Aborted.");
+        } else {
+            droneState.setHasTakenOff(true);
+            instruction = new TakeOff();
+            instruction.executeInstruction(communicator, droneState);
+        }
     }
     public abstract void performMission();
 
-    public void droneLanding(){
-
+    public void droneLanding() throws Exception {
+        instruction = new Land();
+        instruction.executeInstruction(communicator, droneState);
     }
-
-
 }
+
