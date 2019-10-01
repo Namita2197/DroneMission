@@ -17,6 +17,14 @@ public class ShiftBackward extends Instruction {
         String instruction = "back "+distance;
         communicator.sendSignal(instruction);
         System.out.println(communicator.receiveSignal());
+        double yCoordinate;
+        double zCoordinate;
+        double xCoordinate;
+        yCoordinate=droneState.getPositionY();
+        yCoordinate=yCoordinate-distance;
+        zCoordinate=droneState.getPositionZ();
+        xCoordinate=droneState.getPositionX();
+        droneState.move(xCoordinate,yCoordinate,zCoordinate);
         Thread.sleep(2000);
     }
 
