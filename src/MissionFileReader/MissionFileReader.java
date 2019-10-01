@@ -39,8 +39,7 @@ abstract public class MissionFileReader {
                     } else if (messageArray[i].equals("battery?")) {
                         instruction = new Battery();
                         instruction.executeInstruction(communicator,droneState);
-                        int batteryPercentage=droneState.getBatteryPercentage();
-                        System.out.println("Battery remaining:"+batteryPercentage);
+
                     } else if (messageArray[i].equals("flip")) {
                         if(droneState.getBatteryPercentage()<=10) {
                             System.out.println("Battery too low to make a flip!");

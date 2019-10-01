@@ -11,6 +11,8 @@ public class Battery extends Instruction {
 //        System.out.println(batteryPercentage+" received");
         communicator.sendSignal("battery?");
         System.out.println(communicator.receiveSignal());
+        int batteryPercentage=droneState.getBatteryPercentage();
+        System.out.println("Battery remaining:"+batteryPercentage);
     }
 
     @Override
