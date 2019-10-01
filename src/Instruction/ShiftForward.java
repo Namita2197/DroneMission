@@ -6,9 +6,6 @@ import Controller.DroneState;
 import java.util.Scanner;
 
 public class ShiftForward extends Instruction {
-    //public ShiftForward(Communicator communicator) {
-       // super(communicator);
-   // }
 
     @Override
     public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
@@ -19,14 +16,7 @@ public class ShiftForward extends Instruction {
         String instruction = "forward "+distance;
         communicator.sendSignal(instruction);
         System.out.println(communicator.receiveSignal());
-        double yCoordinate;
-        double zCoordinate;
-        double xCoordinate;
-        yCoordinate=droneState.getPositionY();
-        yCoordinate=yCoordinate+distance;
-        zCoordinate=droneState.getPositionZ();
-        xCoordinate=droneState.getPositionX();
-        droneState.move(xCoordinate,yCoordinate,zCoordinate);
+        droneState.move(0,distance,0);
         Thread.sleep(2000);
     }
 

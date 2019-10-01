@@ -1,26 +1,44 @@
 package DroneSimulator;
 
 import Controller.Communicator;
-import Controller.DroneState;
-
-import java.net.InetAddress;
 
 public class ResponseHandler {
-    DroneState droneState;
-    public ResponseHandler(DroneState droneState) {
-        this.droneState=droneState;
+
+    Communicator communicator;
+    String reply;
+
+    public ResponseHandler(String reply, Communicator communicator){
+        this.communicator=communicator;
+        this.reply=reply;
     }
 
-    public void handleResponse() throws Exception {
-        Communicator communicator = new Communicator(8889);
-        while (true) {
-            String reply = communicator.receiveSignal();
-            System.out.println("Command received:" + reply);
-            InetAddress address = communicator.getAddress();
-            int portNumber = communicator.getPortNumber();
-            communicator.setAddress(address, portNumber);
-            MessageManager messageManager = new MessageManager(reply, communicator);
-            messageManager.selectMessage();
-        }
+    public void selectMessage() throws Exception {
+       String[] replyArray= reply.split(" ");
+       DroneSimulator droneSimulator= new DroneSimulator();
+       if(replyArray[0].equals("takeoff")){
+           System.out.println("Drone has taken off");
+           communicator.sendSignal("ok");
+       }else if(replyArray[0].equals("land")){
+           System.out.println("Drone has landed");
+           communicator.sendSignal("ok");
+       }else if(replyArray[0].equals("forward")){
+           System.out.println("Drone has moved forward");
+           communicator.sendSignal("ok");
+       }else if(replyArray[0].equals("back")){
+           System.out.println("Drone has moved backward");
+           communicator.sendSignal("ok");
+       }else if(replyArray[0].equals("flip")){
+           System.out.println("Drone has flipped");
+           communicator.sendSignal("ok");
+       }else if(replyArray[0].equals("command")){
+           System.out.println("Drone in command mode");
+           communicator.sendSignal("ok");
+       }else if(replyArray[0].equals("battery?")){
+            System.out.println("battery query");
+            communicator.sendSignal("ok");
+       }else{
+           System.out.println("Unrecognised command");
+           communicator.sendSignal("error");
+       }
     }
 }

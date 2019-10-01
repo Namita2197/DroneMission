@@ -1,9 +1,6 @@
 package DroneSimulator;
 
-import Controller.Communicator;
 import Controller.DroneState;
-import Instruction.Status;
-import java.net.InetAddress;
 
 public class DroneSimulator{
 
@@ -13,8 +10,8 @@ public class DroneSimulator{
         Thread thread=new Thread(statePublisher);
         thread.start();
         droneState.setInCommandMode(true);
-        ResponseHandler responseHandler= new ResponseHandler(droneState);
-        responseHandler.handleResponse();
+        InstructionReceiver instructionReceiver = new InstructionReceiver();
+        instructionReceiver.receiveInstruction();
     }
 //
 //    public DroneState getDroneState() {

@@ -23,7 +23,7 @@ abstract public class MissionFileReader {
                 break;
             }else{
                     System.out.println(messageArray[i]);
-                    if (messageArray[i].equals("takeoff")) {
+                    if (messageArray[i].equals("takeoff")) {//intstruction.createMeassageList
                         droneState.setHasTakenOff(true);
                         instruction = new TakeOff();
                         instruction.executeInstruction(communicator,droneState);
