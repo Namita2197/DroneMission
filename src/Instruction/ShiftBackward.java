@@ -1,6 +1,7 @@
 package Instruction;
 
 import Controller.Communicator;
+import Controller.DroneState;
 
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class ShiftBackward extends Instruction {
 //
 //        super(communicator);
 //    }
-    public void executeInstruction(Communicator communicator) throws  Exception{
+    public void executeInstruction(Communicator communicator, DroneState droneState) throws  Exception{
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter x cm to move back=");
         int distance=sc.nextInt();

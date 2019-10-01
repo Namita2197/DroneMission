@@ -1,5 +1,7 @@
 package Instruction;
 import Controller.Communicator;
+import Controller.DroneState;
+import DroneSimulator.DroneSimulator;
 
 import java.nio.charset.StandardCharsets;
 
@@ -9,7 +11,7 @@ abstract public class Instruction {
 
       //  this.communicator=communicator;
    // }
-    public abstract void executeInstruction(Communicator communicator) throws Exception;
+    public abstract void executeInstruction(Communicator communicator, DroneState droneState) throws Exception;
     private boolean valid = true;
 
     public static Instruction decode(byte[] bytes, int offset, int length) {

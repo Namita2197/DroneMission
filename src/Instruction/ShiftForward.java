@@ -1,6 +1,7 @@
 package Instruction;
 
 import Controller.Communicator;
+import Controller.DroneState;
 
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ public class ShiftForward extends Instruction {
    // }
 
     @Override
-    public void executeInstruction(Communicator communicator) throws Exception {
+    public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter x cm to move forward=");
         int distance=sc.nextInt();

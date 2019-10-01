@@ -1,6 +1,7 @@
 package Instruction;
 
 import Controller.Communicator;
+import Controller.DroneState;
 import Controller.StringUtils;
 
 public class Status extends Instruction{
@@ -72,7 +73,7 @@ public class Status extends Instruction{
     }
 
     @Override
-    public void executeInstruction(Communicator communicator) throws Exception {
+    public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
 
     }
 

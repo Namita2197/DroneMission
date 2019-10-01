@@ -1,6 +1,7 @@
 package Instruction;
 
 import Controller.Communicator;
+import Controller.DroneState;
 
 public class TakeOff extends Instruction {
 
@@ -10,7 +11,7 @@ public class TakeOff extends Instruction {
    // }
 
     @Override
-    public void executeInstruction(Communicator communicator) throws Exception {
+    public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
         communicator.sendSignal("takeoff");
         System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);
