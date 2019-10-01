@@ -1,10 +1,6 @@
 package Controller;
 
 import Instruction.Status;
-//import Mission.DroneFlyBehaviour;
-//import Mission.MissionFlipForward;
-//import Mission.MissionFlyBackward;
-//import Mission.MissionFlyForward;
 import Mission.DroneFlyBehaviour;
 import Mission.MissionFlipForward;
 import Mission.MissionFlyBackward;
@@ -22,8 +18,6 @@ public class Flier implements Runnable{
     public Flier(DroneState droneState){
         this.droneState=droneState;
     }
-    //thread.start();
-
 
     public void initiation(String iPAddress,int dronePort) throws Exception {
         communicator= new Communicator(iPAddress,dronePort);
@@ -32,7 +26,7 @@ public class Flier implements Runnable{
 //        this.droneFlyBehaviour=droneFlyBehaviour;
     }
 
-    public void performExistingMission(int missionNumber){
+    public void performExistingMission(int missionNumber) throws Exception {
 
         if(missionNumber==1) {
             droneFlyBehaviour =new MissionFlipForward();
@@ -46,14 +40,7 @@ public class Flier implements Runnable{
         droneFlyBehaviour.setCommunicator(communicator);
         droneFlyBehaviour.setDroneState(droneState);
         droneFlyBehaviour.missionTemplate();
-
-
-
     }
-
-//    public void performMission(DroneFlyBehaviour droneFlyBehaviour) throws Exception {
-//        droneFlyBehaviour.performMission(communicator);
-//    }
 
     public void parseFile(MissionFileReader missionFileReader) throws Exception {
         missionFileReader.parseFile(communicator,droneState);
@@ -61,8 +48,7 @@ public class Flier implements Runnable{
 
     @Override
     public void run() {
-        Communicator communicator= null;
-        //Status status;
+        Communicator communicator;
         try {
             communicator = new Communicator(8890);
             while(true) {
@@ -72,13 +58,9 @@ public class Flier implements Runnable{
                 droneState.updateFlyingInfo(status);
 //                System.out.println(status.getBatteryPercentage());
                 Thread.sleep(100);
-
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }
