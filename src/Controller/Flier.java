@@ -5,6 +5,10 @@ import Instruction.Status;
 //import Mission.MissionFlipForward;
 //import Mission.MissionFlyBackward;
 //import Mission.MissionFlyForward;
+import Mission.DroneFlyBehaviour;
+import Mission.MissionFlipForward;
+import Mission.MissionFlyBackward;
+import Mission.MissionFlyForward;
 import MissionFileReader.MissionFileReader;
 
 
@@ -26,6 +30,25 @@ public class Flier implements Runnable{
         droneState.setInCommandMode(true);
 //        this.droneFlyBehaviour=droneFlyBehaviour;
     }
+
+    public void performExistingMission(int missionNumber, DroneFlyBehaviour droneFlyBehaviour){
+
+        if(missionNumber==1) {
+            droneFlyBehaviour =new MissionFlipForward();
+            droneFlyBehaviour.missionTemplate();
+        }
+        else if(missionNumber==2){
+            droneFlyBehaviour = new MissionFlyBackward();
+            droneFlyBehaviour.missionTemplate();
+        }
+        else if(missionNumber==3){
+            droneFlyBehaviour = new MissionFlyForward();
+            droneFlyBehaviour.missionTemplate();
+        }
+
+
+    }
+
 //    public void performMission(DroneFlyBehaviour droneFlyBehaviour) throws Exception {
 //        droneFlyBehaviour.performMission(communicator);
 //    }
