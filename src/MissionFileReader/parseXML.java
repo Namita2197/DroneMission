@@ -1,4 +1,5 @@
 package MissionFileReader;
+import Controller.DroneState;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
 import java.io.*;
@@ -8,7 +9,7 @@ import org.xml.sax.SAXException;
 
 public class parseXML extends MissionFileReader {
     @Override
-    public void parseFile(Communicator communicator) throws Exception {
+    public void parseFile(Communicator communicator, DroneState droneState) throws Exception {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -29,7 +30,7 @@ public class parseXML extends MissionFileReader {
             //messageArray = node.getNodeName();
             //Check all attributes
         }
-        executeTask(communicator, messageArray);
+        executeTask(communicator, messageArray, droneState);
     }
 }
 

@@ -1,18 +1,23 @@
 package DroneSimulator;
 
 import Controller.Communicator;
+import Controller.DroneState;
 import Instruction.Status;
 
 public class MessageManager {
     String reply;
     Communicator communicator;
-    Status status=new Status();
+    Status status;
     public MessageManager(String reply, Communicator communicator){
         this.communicator=communicator;
         this.reply=reply;
     }
+
     public void selectMessage() throws Exception {
        String[] replyArray= reply.split(" ");
+
+        DroneSimulator droneSimulator= new DroneSimulator();
+        DroneState droneState= droneSimulator.getDroneState();
        if(replyArray[0].equals("takeoff")){
            System.out.println("Drone has taken off");
            communicator.sendSignal("ok");
@@ -33,10 +38,8 @@ public class MessageManager {
            communicator.sendSignal("ok");
        }else if(replyArray[0].equals("battery?")){
             System.out.println("battery query");
-           // status =new Status();
-            //int batteryPercentage=status.getBatteryPercentage();
+            //status =new Status();
             communicator.sendSignal("ok");
-            //communicator.sendSignal("battery:"+batteryPercentage);
         }else{
            System.out.println("Unrecognised command");
            communicator.sendSignal("error");

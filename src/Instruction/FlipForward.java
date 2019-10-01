@@ -13,8 +13,8 @@ public class FlipForward extends Instruction {
     public void executeInstruction(Communicator communicator) throws Exception {
         Scanner sc =new Scanner(System.in);
         System.out.print("Enter the initials of the direction you want to flip towards(l/r/f/b)=");
-        int distance=sc.nextInt();
-        String instruction = "flip "+distance;
+        String direction=sc.next();
+        String instruction = "flip "+direction;
         communicator.sendSignal(instruction);
         System.out.println(communicator.receiveSignal());
         Thread.sleep(2000);

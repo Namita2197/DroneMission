@@ -1,6 +1,7 @@
 package DroneSimulator;
 
 import Controller.Communicator;
+import Controller.DroneState;
 import Instruction.Status;
 import Mission.DroneFlyBehaviour;
 
@@ -9,10 +10,14 @@ import java.net.InetAddress;
 import java.net.SocketException;
 
 public class DroneSimulator implements Runnable {
+    DroneState droneState=new DroneState();
     public static void main(String[] args) throws Exception {
         DroneSimulator droneSimulator=new DroneSimulator();
+        DroneState droneState=new DroneState();
         Thread thread=new Thread(droneSimulator);
         thread.start();
+        droneState.setInCommandMode(true);
+//        Thread.sleep(4000);
         Communicator communicator=new Communicator(8889);
         while(true) {
             String reply = communicator.receiveSignal();
@@ -21,11 +26,15 @@ public class DroneSimulator implements Runnable {
             int portNumber = communicator.getPortNumber();
             communicator.setAddress(address, portNumber);
             //communicator.sendSignal("ok");
+
             MessageManager messageManager=new MessageManager(reply,communicator);
             messageManager.selectMessage();
         }
     }
 
+    public DroneState getDroneState() {
+        return droneState;
+    }
 
     @Override
     public void run() {
@@ -35,7 +44,9 @@ public class DroneSimulator implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Status status = new Status(20,12,67,18,16,14,12,60,39,66,80,56.89,65,7.9,5.0,8.0);
+        Status status = new Status(20,12,67,18,16,14,12,100,39,66,8,56.89,65,7.9,5.0,8.0);
+        //
+        droneState.updateFlyingInfo(status);
         String updateStatus=status.getMessageText();
         while(true) {
             try {

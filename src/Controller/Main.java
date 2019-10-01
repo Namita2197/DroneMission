@@ -15,7 +15,7 @@ public class Main {
         //DroneFlyBehaviour droneFlyBehaviour = null;
         MissionFileReader missionFileReader=null;
         Scanner scanner = new Scanner(System.in);
-
+        DroneState droneState=new DroneState();
         System.out.println("Enter IP Address");
         String iPAddress = scanner.next();
 
@@ -50,11 +50,12 @@ public class Main {
 //            System.out.println("INVALID INPUT");
 //        }
 
-        Flier flier = new Flier();
+        Flier flier = new Flier(droneState);
         Thread thread=new Thread(flier);
         flier.initiation(iPAddress,dronePort);
         thread.start();
        // flier.performMission(droneFlyBehaviour);
+        Thread.sleep(4000);
         flier.parseFile(missionFileReader);
     }
 

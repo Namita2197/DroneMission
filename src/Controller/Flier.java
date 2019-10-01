@@ -12,14 +12,18 @@ public class Flier implements Runnable{
 
 //    private DroneFlyBehaviour droneFlyBehaviour;
     Communicator communicator;
-
     Status status;
+    DroneState droneState;
+    public Flier(DroneState droneState){
+        this.droneState=droneState;
+    }
     //thread.start();
 
 
     public void initiation(String iPAddress,int dronePort) throws Exception {
         communicator= new Communicator(iPAddress,dronePort);
         communicator.initiation();
+        droneState.setInCommandMode(true);
 //        this.droneFlyBehaviour=droneFlyBehaviour;
     }
 //    public void performMission(DroneFlyBehaviour droneFlyBehaviour) throws Exception {
@@ -27,7 +31,7 @@ public class Flier implements Runnable{
 //    }
 
     public void parseFile(MissionFileReader missionFileReader) throws Exception {
-        missionFileReader.parseFile(communicator);
+        missionFileReader.parseFile(communicator,droneState);
     }
 
     @Override
@@ -40,6 +44,7 @@ public class Flier implements Runnable{
                 String updatedStatus = communicator.receiveSignal();
                 //status.parseData(updatedStatus);
                 this.status = new Status(updatedStatus);
+                droneState.updateFlyingInfo(status);
 //                System.out.println(status.getBatteryPercentage());
                 Thread.sleep(100);
 
