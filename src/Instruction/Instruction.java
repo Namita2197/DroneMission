@@ -1,7 +1,6 @@
 package Instruction;
-import Controller.Communicator;
-import Controller.DroneState;
-import DroneSimulator.DroneSimulator;
+import Common.Communicator;
+import Common.DroneState;
 
 import java.nio.charset.StandardCharsets;
 

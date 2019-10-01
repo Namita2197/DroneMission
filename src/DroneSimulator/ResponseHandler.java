@@ -1,6 +1,6 @@
 package DroneSimulator;
 
-import Controller.Communicator;
+import Common.Communicator;
 
 public class ResponseHandler {
 

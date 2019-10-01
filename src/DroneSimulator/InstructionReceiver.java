@@ -1,7 +1,6 @@
 package DroneSimulator;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
 
 import java.net.InetAddress;
 

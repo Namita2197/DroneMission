@@ -1,4 +1,4 @@
-package Controller;
+package Common;
 
 import Instruction.Status;
 

@@ -1,7 +1,7 @@
 package Instruction;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
+import Common.DroneState;
 import Controller.StringUtils;
 
 public class Status extends Instruction{

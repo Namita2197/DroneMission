@@ -1,10 +1,6 @@
 package Mission;
 
-import Controller.Communicator;
-import Instruction.Instruction;
-import Instruction.Land;
 import Instruction.ShiftForward;
-import Instruction.TakeOff;
 
 public class MissionFlyForward extends DroneFlyBehaviour {
 

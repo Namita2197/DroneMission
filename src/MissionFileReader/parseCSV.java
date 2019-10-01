@@ -1,12 +1,10 @@
 package MissionFileReader ;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
+import Common.DroneState;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 
 public class parseCSV extends MissionFileReader{
 

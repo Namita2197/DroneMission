@@ -1,4 +1,4 @@
-package Controller;
+package Common;
 
 import java.net.*;
 import java.nio.charset.StandardCharsets;

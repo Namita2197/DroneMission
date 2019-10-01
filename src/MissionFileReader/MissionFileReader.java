@@ -1,7 +1,7 @@
 package MissionFileReader;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
+import Common.DroneState;
 import Instruction.Instruction;
 import Instruction.*;
 

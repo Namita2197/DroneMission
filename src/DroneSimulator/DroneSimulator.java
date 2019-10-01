@@ -1,6 +1,6 @@
 package DroneSimulator;
 
-import Controller.DroneState;
+import Common.DroneState;
 
 public class DroneSimulator{
 

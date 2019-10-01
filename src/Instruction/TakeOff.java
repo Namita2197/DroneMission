@@ -1,7 +1,7 @@
 package Instruction;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
+import Common.DroneState;
 
 public class TakeOff extends Instruction {
 

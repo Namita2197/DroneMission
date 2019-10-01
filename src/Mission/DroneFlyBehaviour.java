@@ -1,7 +1,7 @@
 package Mission;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
+import Common.DroneState;
 import Instruction.*;
 
 public abstract class DroneFlyBehaviour {

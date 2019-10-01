@@ -1,11 +1,10 @@
 package MissionFileReader;
-import Controller.DroneState;
+import Common.DroneState;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
 import java.io.*;
 
-import Controller.Communicator;
-import org.xml.sax.SAXException;
+import Common.Communicator;
 
 public class parseXML extends MissionFileReader {
     @Override

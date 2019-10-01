@@ -1,7 +1,7 @@
 package DroneSimulator;
 
-import Controller.Communicator;
-import Controller.DroneState;
+import Common.Communicator;
+import Common.DroneState;
 import Instruction.Status;
 
 public class StatePublisher implements Runnable{

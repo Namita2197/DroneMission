@@ -1,10 +1,6 @@
 package Controller;
 
-import org.junit.jupiter.api.Test;
-
-import java.net.InetAddress;
-
-import static org.junit.jupiter.api.Assertions.*;
+import Common.Communicator;
 
 class CommunicatorTest {
 Communicator communicator;
