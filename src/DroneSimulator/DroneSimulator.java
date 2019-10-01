@@ -3,7 +3,7 @@ package DroneSimulator;
 import Controller.Communicator;
 import Controller.DroneState;
 import Instruction.Status;
-import Mission.DroneFlyBehaviour;
+//import Mission.DroneFlyBehaviour;
 
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -44,7 +44,7 @@ public class DroneSimulator implements Runnable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Status status = new Status(20,12,67,18,16,14,12,100,39,66,8,56.89,65,7.9,5.0,8.0);
+        Status status = new Status(20,12,67,18,16,14,12,10,39,66,80,56.89,65,7.9,5.0,8.0);
         //
         droneState.updateFlyingInfo(status);
         String updateStatus=status.getMessageText();
