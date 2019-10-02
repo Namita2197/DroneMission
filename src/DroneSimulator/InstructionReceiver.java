@@ -5,10 +5,6 @@ import Common.Communicator;
 import java.net.InetAddress;
 
 public class InstructionReceiver {
-//    DroneState droneState;
-//    public InstructionReceiver(DroneState droneState) {
-//        this.droneState=droneState;
-//    }
 
     public void receiveInstruction() throws Exception {
         Communicator communicator = new Communicator(8889);

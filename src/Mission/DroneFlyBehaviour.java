@@ -22,8 +22,8 @@ public abstract class DroneFlyBehaviour {
         performMission();
         droneLanding();
     }
-    public void droneTakeoff() throws Exception {
 
+    public void droneTakeoff() throws Exception {
         if (droneState.getBatteryPercentage() <= 7 || droneState.getHighTemperature() >= 70) {
             System.out.println("Battery Low! or Temperature too high for a flight!\nMission Aborted.");
         } else {

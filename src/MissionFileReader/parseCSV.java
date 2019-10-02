@@ -16,7 +16,7 @@ public class parseCSV extends MissionFileReader{
         String fileData;
         fileData=br.readLine();
         String[] messageArray =fileData.split(",");
-        Instruction taskArray[]=executeTask(communicator,messageArray, droneState);
+        Instruction taskArray[]=executeTask(messageArray, droneState);
         for(int i=0; i<taskArray.length; i++){
             taskArray[i].executeInstruction(communicator,droneState);
         }

@@ -12,7 +12,6 @@ import MissionFileReader.MissionFileReader;
 public class InstructionSender {
 
     Communicator communicator;
-
     DroneState droneState;
     DroneFlyBehaviour droneFlyBehaviour;
 
@@ -27,8 +26,7 @@ public class InstructionSender {
     }
 
     public void performExistingMission(int missionNumber) throws Exception {
-
-        if(missionNumber==1) {
+        if(missionNumber==1){
             droneFlyBehaviour =new MissionFlipForward();
         }
         else if(missionNumber==2){

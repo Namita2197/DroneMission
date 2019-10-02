@@ -13,12 +13,5 @@ public class DroneSimulator{
         InstructionReceiver instructionReceiver = new InstructionReceiver();
         instructionReceiver.receiveInstruction();
     }
-//
-//    public DroneState getDroneState() {
-//        return droneState;
-//    }
-
-
-
 }
 

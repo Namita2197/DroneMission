@@ -5,10 +5,13 @@ import Common.DroneState;
 import Instruction.Status;
 
 public class StatePublisher implements Runnable{
+
     DroneState droneState;
+
     public StatePublisher(DroneState droneState){
         this.droneState=droneState;
     }
+
     @Override
     public void run() {
         Communicator communicator=null;

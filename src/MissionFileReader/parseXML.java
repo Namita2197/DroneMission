@@ -31,7 +31,7 @@ public class parseXML extends MissionFileReader {
             //Check all attributes
         }
 //        executeTask(communicator, messageArray, droneState);
-        Instruction taskArray[]=executeTask(communicator,messageArray, droneState);
+        Instruction taskArray[]=executeTask(messageArray, droneState);
         for(int i=0; i<taskArray.length; i++){
             taskArray[i].executeInstruction(communicator,droneState);
         }
