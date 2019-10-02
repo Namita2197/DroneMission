@@ -26,10 +26,17 @@ public class ShiftBackward extends Instruction {
             System.out.print("Enter x cm to move back=");
             int distance = sc.nextInt();
             String instruction = "back " + distance;
+            droneState.move(0.0, -distance, 0.0);
+
+            if(droneState.getPositionX()<=-300 || droneState.getPositionY()<=-300){
+                System.out.println("Drone is getting out of the 3 meter zone\nPausing mission for 5 seconds.....");
+                Thread.sleep(5000);
+            }
             communicator.sendSignal(instruction);
             System.out.println("drone has moved backward");
             System.out.println(communicator.receiveSignal());
-            droneState.move(0.0, -distance, 0.0);
+
+
             Thread.sleep(2000);
         }
     }

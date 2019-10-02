@@ -17,7 +17,6 @@ public class parseXML extends MissionFileReader {
         document.getDocumentElement().normalize();
 
         NodeList messageList = document.getElementsByTagName("instruction");
-        // visitChildNodes(messageList);
         String[] messageArray;
         messageArray = new String[messageList.getLength()];
 
@@ -26,16 +25,10 @@ public class parseXML extends MissionFileReader {
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 messageArray[temp]=node.getTextContent();
             }
-            //String[] messageArray;
-            //messageArray = node.getNodeName();
-            //Check all attributes
         }
-//        executeTask(communicator, messageArray, droneState);
         Instruction taskArray[]=executeTask(messageArray, droneState);
         for(int i=0; i<taskArray.length; i++){
             taskArray[i].executeInstruction(communicator,droneState);
         }
     }
 }
-
-//

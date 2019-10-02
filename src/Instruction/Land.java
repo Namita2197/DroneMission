@@ -17,7 +17,9 @@ public class Land extends Instruction {
         zCoordinate=droneState.getPositionZ();
         xCoordinate=droneState.getPositionX();
         System.out.println("Coordinates before landing:"+"("+xCoordinate+","+yCoordinate+","+zCoordinate+")");
-        droneState.move(0.00,0.00,0.00);
+        zCoordinate=0;
+        droneState.move(0.00,0.00,zCoordinate);
+        System.out.println("Coordinates after landing:"+"("+xCoordinate+","+yCoordinate+","+zCoordinate+")");
         Thread.sleep(2000);
     }
 
