@@ -1,5 +1,6 @@
 package MissionFileReader;
 import Common.DroneState;
+import Instruction.Instruction;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
 import java.io.*;
@@ -29,7 +30,11 @@ public class parseXML extends MissionFileReader {
             //messageArray = node.getNodeName();
             //Check all attributes
         }
-        executeTask(communicator, messageArray, droneState);
+//        executeTask(communicator, messageArray, droneState);
+        Instruction taskArray[]=executeTask(communicator,messageArray, droneState);
+        for(int i=0; i<taskArray.length; i++){
+            taskArray[i].executeInstruction(communicator,droneState);
+        }
     }
 }
 

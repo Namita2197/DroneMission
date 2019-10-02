@@ -2,6 +2,7 @@ package MissionFileReader ;
 
 import Common.Communicator;
 import Common.DroneState;
+import Instruction.Instruction;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -15,6 +16,9 @@ public class parseCSV extends MissionFileReader{
         String fileData;
         fileData=br.readLine();
         String[] messageArray =fileData.split(",");
-        executeTask(communicator,messageArray, droneState);
+        Instruction taskArray[]=executeTask(communicator,messageArray, droneState);
+        for(int i=0; i<taskArray.length; i++){
+            taskArray[i].executeInstruction(communicator,droneState);
+        }
     }
 }

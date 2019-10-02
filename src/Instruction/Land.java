@@ -11,7 +11,9 @@ public class Land extends Instruction {
 
     @Override
     public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
+
         communicator.sendSignal("land");
+        System.out.println("drone has landed");
         System.out.println(communicator.receiveSignal());
         double yCoordinate;
         double zCoordinate;
