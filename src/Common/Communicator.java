@@ -34,7 +34,7 @@ public class Communicator {
             if (reply.equals("ok")) {
                 break;
             }
-            System.out.println("Remaining retries: " + maxRetries);
+            System.out.println("Remaining retries:" + maxRetries);
             maxRetries--;
         }
         if (reply == null || !reply.equals("ok"))
@@ -78,5 +78,9 @@ public class Communicator {
     public void setAddress(InetAddress address, int portNumber){
         this.portNumber=portNumber;
         this.address=address;
+    }
+
+    public DatagramSocket getUdpClient() {
+        return udpClient;
     }
 }
