@@ -12,7 +12,7 @@ abstract public class MissionFileReader {
     public Instruction[] executeTask(String[] messageArray, DroneState droneState){
         Instruction taskArray[] = new Instruction[messageArray.length];
         for (int i = 0; i < messageArray.length; i++) {
-            if (messageArray[i].equals("takeoff")) {   //intstruction.createMeassageList
+            if (messageArray[i].equals("takeoff")) {
                 droneState.setHasTakenOff(true);
                 taskArray[i] = new TakeOff();
             } else if (messageArray[i].equals("land")) {
