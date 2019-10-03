@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_4_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DroneMission.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DroneMission.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/CommunicatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/CommunicatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/DroneState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/DroneState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StateReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StateReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/StatePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/StatePublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/FlipForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/FlipForward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/ShiftBackward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/ShiftBackward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/ShiftForward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/ShiftForward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Message/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instruction/TakeOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instruction/TakeOff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Common/CommunicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Common/CommunicatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageOptionsProvider">
-    <option name="myAddOrReplace" value="1" />
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CoverageViewManager">
     <option name="myAutoScrollFromSource" value="true" />
@@ -54,6 +47,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -87,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Flyer">
+  <component name="RunManager" selected="JUnit.CommunicatorTest.testSetAddress">
     <configuration name="DroneSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DroneSimulator.DroneSimulator" />
       <module name="DroneMission" />
@@ -126,16 +120,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommunicatorTest.testSendAndReceiveSignal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Common" />
+      <option name="MAIN_CLASS_NAME" value="Common.CommunicatorTest" />
+      <option name="METHOD_NAME" value="testSendAndReceiveSignal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommunicatorTest.testSetAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Common" />
+      <option name="MAIN_CLASS_NAME" value="Common.CommunicatorTest" />
+      <option name="METHOD_NAME" value="testSetAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Flyer" />
       <item itemvalue="Application.DroneSimulator" />
       <item itemvalue="JUnit.CommunicatorTest" />
+      <item itemvalue="JUnit.CommunicatorTest.testSendAndReceiveSignal" />
+      <item itemvalue="JUnit.CommunicatorTest.testSetAddress" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommunicatorTest.testSetAddress" />
+        <item itemvalue="JUnit.CommunicatorTest" />
+        <item itemvalue="JUnit.CommunicatorTest.testSendAndReceiveSignal" />
         <item itemvalue="Application.Flyer" />
         <item itemvalue="Application.DroneSimulator" />
-        <item itemvalue="JUnit.CommunicatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +199,7 @@
     <SUITE FILE_PATH="coverage/DroneMission$TakeOffTest.ic" NAME="TakeOffTest Coverage Results" MODIFIED="1568266067887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Instruction.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DroneMission$CommunicatorTest.ic" NAME="CommunicatorTest Coverage Results" MODIFIED="1570122797457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/DroneMission$CommunicatorTest.ic" NAME="CommunicatorTest Coverage Results" MODIFIED="1570129906253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
     </SUITE>
   </component>
