@@ -60,23 +60,6 @@ public class DroneState {
             resetFlyingInfo();
     }
 
-    public boolean isVideoStreamOn() { return videoStreamOn; }
-
-    public void setVideoStreamOn(boolean videoStreamOn)
-    {
-        this.videoStreamOn = inCommandMode && videoStreamOn;
-    }
-
-    public Double getCurrentFlightTime() {
-        return currentFlightTime;
-    }
-
-    public void setCurrentFlightTime(Double currentFlightTime) {
-        if (inCommandMode) {
-            this.currentFlightTime = currentFlightTime;
-        }
-    }
-
     public void updateFlyingInfo(Status status) {
         if (!inCommandMode || status==null) {
             return;
@@ -102,10 +85,6 @@ public class DroneState {
         stateTimestamp = new Date();
     }
 
-    public Date getStateTimestamp() {
-        return stateTimestamp;
-    }
-
     public void move(double deltaX, double deltaY, double deltaZ) {
         if (!hasTakenOff) return;
 
@@ -116,13 +95,6 @@ public class DroneState {
         positionX += rotatedX;
         positionY += rotatedY;
         positionZ += deltaZ;
-    }
-
-    public void rotate(int deltaOrientation) {
-        if (!hasTakenOff) return;
-
-        orientation += deltaOrientation;
-        orientation = orientation % 360;
     }
 
     public Double getPositionX() {
@@ -200,8 +172,6 @@ public class DroneState {
     public Integer getMotorTime() {
         return motorTime;
     }
-
-    public int getOrientation() { return orientation; }
 
     private void resetState() {
         videoStreamOn = false;

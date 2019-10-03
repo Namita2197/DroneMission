@@ -1,11 +1,9 @@
 package Common;
 
 import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CommunicatorTest {
@@ -20,10 +18,10 @@ class CommunicatorTest {
 
     @Test
     public void constructor2Test() throws Exception {
+
         int portNumber=9000;
         Boolean thrown=false;
         new Communicator(portNumber);
-
         try {
            new DatagramSocket(portNumber);
         } catch (BindException e) {
@@ -34,6 +32,7 @@ class CommunicatorTest {
 
     @Test
     public void testCommunicatorAndDummyServer() throws InterruptedException {
+
         Thread droneThread = new Thread(new CommandThread());
         Thread serverThread = new Thread(new ServerThread());
         droneThread.start();
@@ -42,12 +41,8 @@ class CommunicatorTest {
     }
 
     @Test
-    public void  testInitiation(){
-
-    }
-
-    @Test
     public void testSetAddressandPortNumber() throws Exception {
+
         Communicator communicator=new Communicator("127.0.0.1",8889);
         InetAddress newAddress =InetAddress.getByName("127.0.0.2");
         int newPort =3000;
@@ -58,6 +53,7 @@ class CommunicatorTest {
 
     @Test
     public void testSendAndReceiveSignal() throws Exception {
+
         Communicator sender =new Communicator("127.0.0.1",5000);
         Communicator receiver =new Communicator(5000);
         sender.sendSignal("checking");
@@ -97,9 +93,7 @@ class DummyServer{
             e.printStackTrace();
         }
         System.out.println(" Ok/Error sent back");
-
     }
-
 }
 
 class ServerThread implements Runnable {
