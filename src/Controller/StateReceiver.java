@@ -2,7 +2,7 @@ package Controller;
 
 import Common.Communicator;
 import Common.DroneState;
-import Instruction.Status;
+import Message.Status;
 
 public class StateReceiver implements Runnable{
     DroneState droneState;

@@ -42,9 +42,4 @@ public class ShiftForward extends Instruction {
             Thread.sleep(2000);
         }
     }
-
-    @Override
-    public String getMessageType() {
-        return null;
-    }
 }

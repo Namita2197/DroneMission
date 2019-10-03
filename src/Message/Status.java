@@ -1,10 +1,10 @@
-package Instruction;
+package Message;
 
-import Common.Communicator;
-import Common.DroneState;
+
 import Controller.StringUtils;
 
-public class Status extends Instruction{
+
+public class Status extends Message {
 
     public static String getKeyWord() { return "mid"; }
 
@@ -69,12 +69,7 @@ public class Status extends Instruction{
                 StringUtils.formatDouble(accelerationX), StringUtils.formatDouble(accelerationY), StringUtils.formatDouble(accelerationZ));
     }
 
-    @Override
-    public void executeInstruction(Communicator communicator, DroneState droneState) throws Exception {
-
-    }
-
-    @Override
+     @Override
     public String getMessageType() { return "status"; }
 
     public Integer getPitch() {

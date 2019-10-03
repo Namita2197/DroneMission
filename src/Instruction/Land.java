@@ -22,9 +22,4 @@ public class Land extends Instruction {
         System.out.println("Coordinates after landing:"+"("+xCoordinate+","+yCoordinate+","+zCoordinate+")");
         Thread.sleep(2000);
     }
-
-    @Override
-    public String getMessageType() {
-        return null;
-    }
 }

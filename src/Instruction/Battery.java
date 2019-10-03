@@ -11,9 +11,4 @@ public class Battery extends Instruction {
         int batteryPercentage=droneState.getBatteryPercentage();
         System.out.println("Battery remaining:"+batteryPercentage);
     }
-
-    @Override
-    public String getMessageType() {
-        return null;
-    }
 }

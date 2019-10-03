@@ -1,6 +1,6 @@
 package Common;
 
-import Instruction.Status;
+import Message.Status;
 
 import java.util.Date;
 
