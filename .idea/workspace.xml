@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Instruction/TakeOffTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/TakeOffTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MissionFlyBackwardTest">
+  <component name="RunManager" selected="JUnit.All in DroneMission">
     <configuration name="All in DroneMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <option name="PACKAGE_NAME" value="" />
@@ -157,8 +153,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MissionFlyBackwardTest" />
         <item itemvalue="JUnit.All in DroneMission" />
+        <item itemvalue="JUnit.MissionFlyBackwardTest" />
         <item itemvalue="JUnit.InstructionSenderTest" />
         <item itemvalue="JUnit.ShiftForwardTest" />
         <item itemvalue="JUnit.ShiftBackwardTest" />
