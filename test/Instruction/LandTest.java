@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 // executeInstruction is not throwing error and that is why test is successful.
 class LandTest {
     @Test
-    void executeInstruction() throws Exception {
+    void executeInstruction() {
         Thread dummyRequesterLand =new Thread(new DummyRequesterLand());
         Thread dummyResponderLand =new Thread(new DummyResponderLand());
         dummyResponderLand.start();
@@ -17,18 +17,18 @@ class LandTest {
     }
 }
 class DummyResponderLand implements Runnable{
-    String response=null;
-
+    String reply=null;
     @Override
     public void run() {
 
         try {
-            Communicator communicator= new Communicator(1111);
-            String reply=communicator.receiveSignal();
+            Communicator communicator= new Communicator(1456);
+            reply=communicator.receiveSignal();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 }
 
 class DummyRequesterLand implements Runnable{
@@ -37,7 +37,7 @@ class DummyRequesterLand implements Runnable{
     public void run() {
         Communicator communicator= null;
         try {
-            communicator = new Communicator("127.0.0.1",1111);
+            communicator = new Communicator("127.0.0.1",1456);
             Status testingStatus=new Status(20,12,67,18,16,14,12,10,39,66,9,56.89,65,7.9,5.0,8.0);
             DroneState droneState=new DroneState();
             droneState.setInCommandMode(true);

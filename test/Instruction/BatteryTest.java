@@ -5,33 +5,27 @@ import Common.DroneState;
 import Message.Status;
 import org.junit.jupiter.api.Test;
 
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.SocketException;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class BatteryTest {
 
     @Test
-    void executeInstruction() throws Exception {
-    Thread dummyRequester =new Thread(new DummyRequester());
-    Thread dummyResponder =new Thread(new DummyResponder());
+    void executeInstruction()  {
+    Thread dummyRequester =new Thread(new DummyRequesterFlip());
+    Thread dummyResponder =new Thread(new DummyResponderFlip());
     dummyResponder.start();
     dummyRequester.start();
 
     }
 }
-
+// executeInstruction is not throwing error and that is why test is successful.
 class DummyResponder implements Runnable{
-    String response=null;
+    String reply=null;
 
     @Override
     public void run() {
 
         try {
             Communicator communicator= new Communicator(1111);
-            String reply=communicator.receiveSignal();
+            reply=communicator.receiveSignal();
         } catch (Exception e) {
             e.printStackTrace();
         }
