@@ -44,8 +44,8 @@ class DummyRequesterShiftBackward implements Runnable{
             droneState.setInCommandMode(true);
             droneState.setHasTakenOff(true);
             droneState.updateFlyingInfo(testingStatus);
-            Battery testingBattery= new Battery();
-            testingBattery.executeInstruction(communicator,droneState);
+            ShiftBackward testingBackward= new ShiftBackward();
+            testingBackward.executeInstruction(communicator,droneState);
         } catch (Exception e) {
             e.printStackTrace();
         }

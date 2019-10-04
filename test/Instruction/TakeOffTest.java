@@ -46,8 +46,8 @@ class DummyRequesterTakeoff implements Runnable{
             droneState.setInCommandMode(true);
             droneState.setHasTakenOff(true);
             droneState.updateFlyingInfo(testingStatus);
-            Battery testingBattery= new Battery();
-            testingBattery.executeInstruction(communicator,droneState);
+            TakeOff testingTakeoff= new TakeOff();
+            testingTakeoff.executeInstruction(communicator,droneState);
         } catch (Exception e) {
             e.printStackTrace();
         }

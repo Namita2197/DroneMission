@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Instruction/TakeOffTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/TakeOffTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,26 +79,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in DroneMission">
+  <component name="RunManager" selected="JUnit.MissionFlyBackwardTest">
     <configuration name="All in DroneMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlipForwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DroneMission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Instruction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Instruction" />
-      <option name="MAIN_CLASS_NAME" value="Instruction.FlipForwardTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,6 +98,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="Controller" />
       <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MissionFlyBackwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Mission" />
+      <option name="MAIN_CLASS_NAME" value="Mission.MissionFlyBackwardTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,18 +150,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in DroneMission" />
-      <item itemvalue="JUnit.FlipForwardTest" />
       <item itemvalue="JUnit.ShiftBackwardTest" />
       <item itemvalue="JUnit.ShiftForwardTest" />
       <item itemvalue="JUnit.InstructionSenderTest" />
+      <item itemvalue="JUnit.MissionFlyBackwardTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MissionFlyBackwardTest" />
         <item itemvalue="JUnit.All in DroneMission" />
         <item itemvalue="JUnit.InstructionSenderTest" />
         <item itemvalue="JUnit.ShiftForwardTest" />
         <item itemvalue="JUnit.ShiftBackwardTest" />
-        <item itemvalue="JUnit.FlipForwardTest" />
       </list>
     </recent_temporary>
   </component>

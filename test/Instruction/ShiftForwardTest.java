@@ -46,8 +46,8 @@ class DummyRequesterShiftForward implements Runnable{
             droneState.setInCommandMode(true);
             droneState.setHasTakenOff(true);
             droneState.updateFlyingInfo(testingStatus);
-            Battery testingBattery= new Battery();
-            testingBattery.executeInstruction(communicator,droneState);
+            ShiftForward testingForward= new ShiftForward();
+            testingForward.executeInstruction(communicator,droneState);
         } catch (Exception e) {
             e.printStackTrace();
         }
