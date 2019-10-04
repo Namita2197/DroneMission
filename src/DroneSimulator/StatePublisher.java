@@ -11,6 +11,9 @@ public class StatePublisher implements Runnable{
     public StatePublisher(DroneState droneState){
         this.droneState=droneState;
     }
+    public DroneState getDroneState(){
+        return droneState;
+    }
 
     @Override
     public void run() {

@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/StateReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/StateReceiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/StatePublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/StatePublisher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/StateReceiverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/StateReceiverTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StateReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StateReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/StatePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/StatePublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Controller/StateReceiverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/StateReceiverTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +52,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Instruction" />
       <recent name="Controller" />
       <recent name="Common" />
-      <recent name="Instruction" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Message" />
@@ -88,54 +91,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BatteryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Instruction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
+      <option name="PACKAGE_NAME" value="Instruction" />
+      <option name="MAIN_CLASS_NAME" value="Instruction.BatteryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InstructionSenderTest.InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BatteryTest.executeInstruction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Instruction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
-      <option name="METHOD_NAME" value="InstructionSenderTest" />
+      <option name="PACKAGE_NAME" value="Instruction" />
+      <option name="MAIN_CLASS_NAME" value="Instruction.BatteryTest" />
+      <option name="METHOD_NAME" value="executeInstruction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InstructionSenderTest.performExistingMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlipForwardTest.executeInstruction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Instruction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
-      <option name="METHOD_NAME" value="performExistingMission" />
+      <option name="PACKAGE_NAME" value="Instruction" />
+      <option name="MAIN_CLASS_NAME" value="Instruction.FlipForwardTest" />
+      <option name="METHOD_NAME" value="executeInstruction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateReceiverTest.testStateReceiver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StateReceiverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
@@ -145,26 +148,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="Controller" />
       <option name="MAIN_CLASS_NAME" value="Controller.StateReceiverTest" />
-      <option name="METHOD_NAME" value="testStateReceiver" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.InstructionSenderTest.performExistingMission" />
-      <item itemvalue="JUnit.StateReceiverTest.testStateReceiver" />
-      <item itemvalue="JUnit.InstructionSenderTest" />
-      <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
       <item itemvalue="JUnit.All in DroneMission" />
+      <item itemvalue="JUnit.BatteryTest.executeInstruction" />
+      <item itemvalue="JUnit.StateReceiverTest" />
+      <item itemvalue="JUnit.BatteryTest" />
+      <item itemvalue="JUnit.FlipForwardTest.executeInstruction" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in DroneMission" />
-        <item itemvalue="JUnit.InstructionSenderTest" />
-        <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
-        <item itemvalue="JUnit.StateReceiverTest.testStateReceiver" />
-        <item itemvalue="JUnit.InstructionSenderTest.performExistingMission" />
+        <item itemvalue="JUnit.BatteryTest.executeInstruction" />
+        <item itemvalue="JUnit.FlipForwardTest.executeInstruction" />
+        <item itemvalue="JUnit.BatteryTest" />
+        <item itemvalue="JUnit.StateReceiverTest" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +206,9 @@
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_updateFlyingInfo.ic" NAME="DroneStateTest.updateFlyingInfo Coverage Results" MODIFIED="1570134829158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/DroneMission$BatteryTest.ic" NAME="BatteryTest Coverage Results" MODIFIED="1570211404248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Instruction.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest.ic" NAME="DroneStateTest Coverage Results" MODIFIED="1570134129251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
     </SUITE>
@@ -216,5 +221,6 @@
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_move.ic" NAME="DroneStateTest.move Coverage Results" MODIFIED="1570136171216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/DroneMission$All_in_DroneMission.ic" NAME="All in DroneMission Coverage Results" MODIFIED="1570213362413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

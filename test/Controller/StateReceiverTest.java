@@ -17,5 +17,6 @@ class StateReceiverTest {
         Thread threadReceiver=new Thread(stateReceiver);
         threadPublisher.start();
         threadReceiver.start();
+        assertEquals(statePublisher.getDroneState(),stateReceiver.getDroneState());
     }
 }

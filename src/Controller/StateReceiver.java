@@ -9,6 +9,9 @@ public class StateReceiver implements Runnable{
     public StateReceiver(DroneState droneState) {
         this.droneState=droneState;
     }
+    public DroneState getDroneState(){
+        return droneState;
+    }
 
     @Override
     public void run() {
