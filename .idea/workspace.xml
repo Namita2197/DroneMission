@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/InstructionSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/InstructionSender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/DroneStateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/DroneStateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/InstructionSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InstructionSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +79,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InstructionSenderTest.InstructionSenderTest">
+  <component name="RunManager" selected="JUnit.All in DroneMission">
+    <configuration name="All in DroneMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
@@ -107,22 +114,6 @@
       <option name="PACKAGE_NAME" value="Controller" />
       <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
       <option name="METHOD_NAME" value="InstructionSenderTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InstructionSenderTest.initiation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DroneMission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
-      <option name="METHOD_NAME" value="initiation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,19 +152,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.InstructionSenderTest.initiation" />
       <item itemvalue="JUnit.InstructionSenderTest.performExistingMission" />
       <item itemvalue="JUnit.StateReceiverTest.testStateReceiver" />
       <item itemvalue="JUnit.InstructionSenderTest" />
       <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
+      <item itemvalue="JUnit.All in DroneMission" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
+        <item itemvalue="JUnit.All in DroneMission" />
         <item itemvalue="JUnit.InstructionSenderTest" />
+        <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
         <item itemvalue="JUnit.StateReceiverTest.testStateReceiver" />
         <item itemvalue="JUnit.InstructionSenderTest.performExistingMission" />
-        <item itemvalue="JUnit.InstructionSenderTest.initiation" />
       </list>
     </recent_temporary>
   </component>

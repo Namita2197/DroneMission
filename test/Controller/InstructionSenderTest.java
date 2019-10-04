@@ -19,7 +19,7 @@ class InstructionSenderTest {
         testingThread.start();
 
         InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
-        testingInstructionSender.initiation("127.0.0.1",1111);
+        testingInstructionSender.initiation("127.0.0.1",8890);
         testingInstructionSender.performExistingMission(1);
     }
 }
@@ -29,7 +29,7 @@ class DummyServer implements Runnable{
     public void run() {
 
         try {
-            Communicator testCommunicator=new Communicator(1111);
+            Communicator testCommunicator=new Communicator(8890);
             testCommunicator.receiveSignal();
             testCommunicator.setAddress(testCommunicator.getAddress(),testCommunicator.getPortNumber());
             testCommunicator.sendSignal("ok");
