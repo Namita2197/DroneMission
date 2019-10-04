@@ -1,20 +1,41 @@
 package Controller;
 
+import Common.Communicator;
+import Common.DroneState;
+import Mission.DroneFlyBehaviour;
+import Mission.MissionFlipForward;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class InstructionSenderTest {
 
-    @Test
-    void initiation() {
-    }
+@Test
+    public void InstructionSenderTest() throws Exception {
 
-    @Test
-    void performExistingMission() {
-    }
+        DroneState testDroneState=new DroneState();
+        DummyServer dummyServer=new DummyServer();
+        Thread testingThread=new Thread(dummyServer);
+        testingThread.start();
 
-    @Test
-    void parseFile() {
+        InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
+        testingInstructionSender.initiation("127.0.0.1",1111);
+        testingInstructionSender.performExistingMission(1);
+    }
+}
+class DummyServer implements Runnable{
+
+    @Override
+    public void run() {
+
+        try {
+            Communicator testCommunicator=new Communicator(1111);
+            testCommunicator.receiveSignal();
+            testCommunicator.setAddress(testCommunicator.getAddress(),testCommunicator.getPortNumber());
+            testCommunicator.sendSignal("ok");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

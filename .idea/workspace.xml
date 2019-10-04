@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Common/DroneState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Common/DroneState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/CommandThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/CommandThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/CommunicatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/CommunicatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/DummyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/DummyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/DroneState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/DroneState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Common/CommunicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Common/CommunicatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/InstructionSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/InstructionSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Common/DroneStateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Common/DroneStateTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/InstructionSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InstructionSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,9 +50,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Controller" />
       <recent name="Common" />
       <recent name="Instruction" />
-      <recent name="Controller" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Message" />
@@ -83,99 +80,100 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DroneStateTest">
-    <configuration name="CommunicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InstructionSenderTest.InstructionSenderTest">
+    <configuration name="InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Common.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Common" />
-      <option name="MAIN_CLASS_NAME" value="Common.CommunicatorTest" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DroneStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InstructionSenderTest.InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Common.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Common" />
-      <option name="MAIN_CLASS_NAME" value="Common.DroneStateTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DroneStateTest.move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DroneMission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Common.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Common" />
-      <option name="MAIN_CLASS_NAME" value="Common.DroneStateTest" />
-      <option name="METHOD_NAME" value="move" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
+      <option name="METHOD_NAME" value="InstructionSenderTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DroneStateTest.setAndGetHasTakenOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InstructionSenderTest.initiation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Common.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Common" />
-      <option name="MAIN_CLASS_NAME" value="Common.DroneStateTest" />
-      <option name="METHOD_NAME" value="setAndGetHasTakenOff" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
+      <option name="METHOD_NAME" value="initiation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DroneStateTest.updateFlyingInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InstructionSenderTest.performExistingMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Common.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Common" />
-      <option name="MAIN_CLASS_NAME" value="Common.DroneStateTest" />
-      <option name="METHOD_NAME" value="updateFlyingInfo" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
+      <option name="METHOD_NAME" value="performExistingMission" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateReceiverTest.testStateReceiver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.StateReceiverTest" />
+      <option name="METHOD_NAME" value="testStateReceiver" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DroneStateTest" />
-      <item itemvalue="JUnit.CommunicatorTest" />
-      <item itemvalue="JUnit.DroneStateTest.setAndGetHasTakenOff" />
-      <item itemvalue="JUnit.DroneStateTest.updateFlyingInfo" />
-      <item itemvalue="JUnit.DroneStateTest.move" />
+      <item itemvalue="JUnit.InstructionSenderTest.initiation" />
+      <item itemvalue="JUnit.InstructionSenderTest.performExistingMission" />
+      <item itemvalue="JUnit.StateReceiverTest.testStateReceiver" />
+      <item itemvalue="JUnit.InstructionSenderTest" />
+      <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DroneStateTest" />
-        <item itemvalue="JUnit.DroneStateTest.move" />
-        <item itemvalue="JUnit.DroneStateTest.updateFlyingInfo" />
-        <item itemvalue="JUnit.DroneStateTest.setAndGetHasTakenOff" />
-        <item itemvalue="JUnit.CommunicatorTest" />
+        <item itemvalue="JUnit.InstructionSenderTest.InstructionSenderTest" />
+        <item itemvalue="JUnit.InstructionSenderTest" />
+        <item itemvalue="JUnit.StateReceiverTest.testStateReceiver" />
+        <item itemvalue="JUnit.InstructionSenderTest.performExistingMission" />
+        <item itemvalue="JUnit.InstructionSenderTest.initiation" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +218,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_setInCommandMode.ic" NAME="DroneStateTest.setInCommandMode Coverage Results" MODIFIED="1570133756634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DroneMission$InstructionSenderTest_initiation.ic" NAME="InstructionSenderTest.initiation Coverage Results" MODIFIED="1570137148563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Controller.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_move.ic" NAME="DroneStateTest.move Coverage Results" MODIFIED="1570136171216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>

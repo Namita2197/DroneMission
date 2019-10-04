@@ -15,7 +15,8 @@ public class InstructionSender {
     DroneState droneState;
     DroneFlyBehaviour droneFlyBehaviour;
 
-    public InstructionSender(DroneState droneState){
+    public InstructionSender(DroneState droneState)
+    {
         this.droneState=droneState;
     }
 
@@ -44,5 +45,7 @@ public class InstructionSender {
         missionFileReader.parseFile(communicator,droneState);
     }
 
-
+    public DroneFlyBehaviour getDroneFlyBehaviour() {
+        return droneFlyBehaviour;
+    }
 }
