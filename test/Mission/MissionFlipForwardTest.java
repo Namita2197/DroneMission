@@ -1,20 +1,17 @@
-package Controller;
+package Mission;
 
 import Common.Communicator;
 import Common.DroneState;
-import Mission.DroneFlyBehaviour;
-import Mission.MissionFlipForward;
+import Controller.InstructionSender;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+class MissionFlipForwardTest {
 
-class InstructionSenderTest {
+    @Test
+    public void MissonFlipTest() throws Exception {
 
-@Test
-    public void InstructionSenderTest() throws Exception {
-
-        DummyServer dummyServer=new DummyServer();
-        DummyClient dummyClient=new DummyClient();
+        DummyServerFlip dummyServer=new DummyServerFlip();
+        DummyClientFlip dummyClient=new DummyClientFlip();
         Thread testingThread=new Thread(dummyServer);
         Thread testingThread2=new Thread(dummyClient);
         testingThread.start();
@@ -22,7 +19,7 @@ class InstructionSenderTest {
     }
 }
 
-class DummyServer implements Runnable{
+class DummyServerFlip implements Runnable{
 
     @Override
     public void run() {
@@ -38,7 +35,7 @@ class DummyServer implements Runnable{
         }
     }
 }
-class DummyClient implements Runnable{
+class DummyClientFlip implements Runnable{
 
     @Override
     public void run() {
@@ -54,3 +51,4 @@ class DummyClient implements Runnable{
 
     }
 }
+

@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Instruction/DummyRequesterFlip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Instruction/DummyRequesterFlip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Instruction/DummyResponderFlip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Instruction/DummyResponderFlip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Instruction/FlipForwardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Instruction/FlipForwardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/DummyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/InstructionSenderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Mission" />
       <recent name="Instruction" />
       <recent name="Controller" />
       <recent name="Common" />
@@ -80,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShiftBackwardTest">
+  <component name="RunManager" selected="JUnit.All in DroneMission">
     <configuration name="All in DroneMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,33 +105,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Instruction.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Instruction" />
-      <option name="MAIN_CLASS_NAME" value="Instruction.LandTest" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LandTest.executeInstruction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DroneMission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Instruction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Instruction" />
-      <option name="MAIN_CLASS_NAME" value="Instruction.LandTest" />
-      <option name="METHOD_NAME" value="executeInstruction" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,20 +135,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShiftForwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Instruction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Instruction" />
+      <option name="MAIN_CLASS_NAME" value="Instruction.ShiftForwardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.All in DroneMission" />
-      <item itemvalue="JUnit.LandTest" />
-      <item itemvalue="JUnit.LandTest.executeInstruction" />
       <item itemvalue="JUnit.FlipForwardTest" />
       <item itemvalue="JUnit.ShiftBackwardTest" />
+      <item itemvalue="JUnit.ShiftForwardTest" />
+      <item itemvalue="JUnit.InstructionSenderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in DroneMission" />
+        <item itemvalue="JUnit.InstructionSenderTest" />
+        <item itemvalue="JUnit.ShiftForwardTest" />
         <item itemvalue="JUnit.ShiftBackwardTest" />
         <item itemvalue="JUnit.FlipForwardTest" />
-        <item itemvalue="JUnit.All in DroneMission" />
-        <item itemvalue="JUnit.LandTest" />
-        <item itemvalue="JUnit.LandTest.executeInstruction" />
       </list>
     </recent_temporary>
   </component>
@@ -218,6 +218,6 @@
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_move.ic" NAME="DroneStateTest.move Coverage Results" MODIFIED="1570136171216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DroneMission$All_in_DroneMission.ic" NAME="All in DroneMission Coverage Results" MODIFIED="1570213362413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DroneMission$All_in_DroneMission.ic" NAME="All in DroneMission Coverage Results" MODIFIED="1570229240617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
