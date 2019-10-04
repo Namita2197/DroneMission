@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/Controller/StateReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/Controller/StateReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/StatePublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DroneMission/DroneSimulator/StatePublisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Controller/StateReceiverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Controller/StateReceiverTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StateReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StateReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DroneSimulator/StatePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DroneSimulator/StatePublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Controller/StateReceiverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/StateReceiverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Instruction/BatteryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Instruction/BatteryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Instruction/FlipForwardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Instruction/FlipForwardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Instruction/BatteryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/BatteryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TreeGrading" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in DroneMission">
+  <component name="RunManager" selected="JUnit.LandTest">
     <configuration name="All in DroneMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <option name="PACKAGE_NAME" value="" />
@@ -138,16 +135,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateReceiverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Instruction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.StateReceiverTest" />
+      <option name="PACKAGE_NAME" value="Instruction" />
+      <option name="MAIN_CLASS_NAME" value="Instruction.LandTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,17 +153,17 @@
     <list>
       <item itemvalue="JUnit.All in DroneMission" />
       <item itemvalue="JUnit.BatteryTest.executeInstruction" />
-      <item itemvalue="JUnit.StateReceiverTest" />
       <item itemvalue="JUnit.BatteryTest" />
       <item itemvalue="JUnit.FlipForwardTest.executeInstruction" />
+      <item itemvalue="JUnit.LandTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LandTest" />
+        <item itemvalue="JUnit.BatteryTest" />
         <item itemvalue="JUnit.All in DroneMission" />
         <item itemvalue="JUnit.BatteryTest.executeInstruction" />
         <item itemvalue="JUnit.FlipForwardTest.executeInstruction" />
-        <item itemvalue="JUnit.BatteryTest" />
-        <item itemvalue="JUnit.StateReceiverTest" />
       </list>
     </recent_temporary>
   </component>

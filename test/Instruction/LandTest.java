@@ -5,25 +5,18 @@ import Common.DroneState;
 import Message.Status;
 import org.junit.jupiter.api.Test;
 
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.SocketException;
-
 import static org.junit.jupiter.api.Assertions.*;
-
-class BatteryTest {
-
+// executeInstruction is not throwing error and that is why test is successful.
+class LandTest {
     @Test
     void executeInstruction() throws Exception {
-    Thread dummyRequester =new Thread(new DummyRequester());
-    Thread dummyResponder =new Thread(new DummyResponder());
-    dummyResponder.start();
-    dummyRequester.start();
-
+        Thread dummyRequesterLand =new Thread(new DummyRequesterLand());
+        Thread dummyResponderLand =new Thread(new DummyResponderLand());
+        dummyResponderLand.start();
+        dummyRequesterLand.start();
     }
 }
-
-class DummyResponder implements Runnable{
+class DummyResponderLand implements Runnable{
     String response=null;
 
     @Override
@@ -38,7 +31,7 @@ class DummyResponder implements Runnable{
     }
 }
 
-class DummyRequester implements Runnable{
+class DummyRequesterLand implements Runnable{
 
     @Override
     public void run() {
@@ -50,12 +43,10 @@ class DummyRequester implements Runnable{
             droneState.setInCommandMode(true);
             droneState.setHasTakenOff(true);
             droneState.updateFlyingInfo(testingStatus);
-            Battery testingBattery= new Battery();
-            testingBattery.executeInstruction(communicator,droneState);
+            Land testingLand= new Land();
+            testingLand.executeInstruction(communicator,droneState);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }
