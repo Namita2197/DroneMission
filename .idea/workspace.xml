@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftBackwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Instruction/ShiftForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MissionFileReader/parseCSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MissionFileReader/parseCSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Controller/InstructionSenderTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ResponseHandlerTest">
+  <component name="RunManager" selected="JUnit.All in DroneMission">
     <configuration name="DroneSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DroneSimulator.DroneSimulator" />
       <module name="DroneMission" />
@@ -157,11 +153,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in DroneMission" />
         <item itemvalue="JUnit.ResponseHandlerTest" />
         <item itemvalue="Application.Flyer" />
         <item itemvalue="Application.DroneSimulator" />
         <item itemvalue="JUnit.InstructionReceiverTest.testInstructionReceiver" />
-        <item itemvalue="JUnit.All in DroneMission" />
       </list>
     </recent_temporary>
   </component>

@@ -48,6 +48,8 @@ class DummyClient implements Runnable{
             InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
             testingInstructionSender.initiation("127.0.0.1",8890);
             testingInstructionSender.performExistingMission(1);
+            testingInstructionSender.performExistingMission(2);
+            testingInstructionSender.performExistingMission(3);
         } catch (Exception e) {
             e.printStackTrace();
         }
