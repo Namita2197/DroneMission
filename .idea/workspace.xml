@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Mission/DummyClientForward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Mission/DummyClientForward.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +46,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="DroneSimulator" />
       <recent name="MissionFileReader" />
       <recent name="Message" />
       <recent name="Mission" />
       <recent name="Instruction" />
-      <recent name="Controller" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Message" />
@@ -80,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in DroneMission">
+  <component name="RunManager" selected="JUnit.InstructionReceiverTest.testInstructionReceiver">
     <configuration name="All in DroneMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <option name="PACKAGE_NAME" value="" />
@@ -89,17 +87,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MissionFlyBackwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InstructionReceiverTest.testInstructionReceiver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mission.*" />
+          <option name="PATTERN" value="DroneSimulator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Mission" />
-      <option name="MAIN_CLASS_NAME" value="Mission.MissionFlyBackwardTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="DroneSimulator" />
+      <option name="MAIN_CLASS_NAME" value="DroneSimulator.InstructionReceiverTest" />
+      <option name="METHOD_NAME" value="testInstructionReceiver" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,18 +150,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in DroneMission" />
-      <item itemvalue="JUnit.MissionFlyBackwardTest" />
       <item itemvalue="JUnit.StatusTest" />
       <item itemvalue="JUnit.parseCSVTest" />
       <item itemvalue="JUnit.parseXMLTest" />
+      <item itemvalue="JUnit.InstructionReceiverTest.testInstructionReceiver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InstructionReceiverTest.testInstructionReceiver" />
         <item itemvalue="JUnit.All in DroneMission" />
         <item itemvalue="JUnit.parseXMLTest" />
         <item itemvalue="JUnit.parseCSVTest" />
         <item itemvalue="JUnit.StatusTest" />
-        <item itemvalue="JUnit.MissionFlyBackwardTest" />
       </list>
     </recent_temporary>
   </component>
