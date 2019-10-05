@@ -25,7 +25,7 @@ class DummyServerFlip implements Runnable{
     public void run() {
 
         try {
-            Communicator testCommunicator=new Communicator(8890);
+            Communicator testCommunicator=new Communicator(6666);
             testCommunicator.receiveSignal();
             testCommunicator.setAddress(testCommunicator.getAddress(),testCommunicator.getPortNumber());
             testCommunicator.sendSignal("ok");
@@ -43,7 +43,7 @@ class DummyClientFlip implements Runnable{
         try {
             DroneState testDroneState=new DroneState();
             InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
-            testingInstructionSender.initiation("127.0.0.1",8890);
+            testingInstructionSender.initiation("127.0.0.1",6666);
             testingInstructionSender.performExistingMission(1);
         } catch (Exception e) {
             e.printStackTrace();

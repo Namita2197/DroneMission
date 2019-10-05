@@ -23,7 +23,7 @@ class DummyServerBackward implements Runnable{
     public void run() {
 
         try {
-            Communicator testCommunicator=new Communicator(8890);
+            Communicator testCommunicator=new Communicator(4444);
             testCommunicator.receiveSignal();
             testCommunicator.setAddress(testCommunicator.getAddress(),testCommunicator.getPortNumber());
             testCommunicator.sendSignal("ok");
@@ -41,7 +41,7 @@ class DummyClientBackward implements Runnable{
         try {
             DroneState testDroneState=new DroneState();
             InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
-            testingInstructionSender.initiation("127.0.0.1",8890);
+            testingInstructionSender.initiation("127.0.0.1",4444);
             testingInstructionSender.performExistingMission(2);
         } catch (Exception e) {
             e.printStackTrace();

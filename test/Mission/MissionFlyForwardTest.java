@@ -24,7 +24,7 @@ class DummyServerForward implements Runnable{
     public void run() {
 
         try {
-            Communicator testCommunicator=new Communicator(8890);
+            Communicator testCommunicator=new Communicator(5555);
             testCommunicator.receiveSignal();
             testCommunicator.setAddress(testCommunicator.getAddress(),testCommunicator.getPortNumber());
             testCommunicator.sendSignal("ok");
@@ -42,7 +42,7 @@ class DummyClientForward implements Runnable{
         try {
             DroneState testDroneState=new DroneState();
             InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
-            testingInstructionSender.initiation("127.0.0.1",8890);
+            testingInstructionSender.initiation("127.0.0.1",5555);
             testingInstructionSender.performExistingMission(3);
         } catch (Exception e) {
             e.printStackTrace();
