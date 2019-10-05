@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/Mission/MissionFlipForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mission/MissionFlipForwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mission/MissionFlyBackwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mission/MissionFlyBackwardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
