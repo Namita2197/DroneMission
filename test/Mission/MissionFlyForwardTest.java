@@ -42,7 +42,7 @@ class DummyClientForward implements Runnable{
             DroneState testDroneState=new DroneState();
             InstructionSender testingInstructionSender=new InstructionSender(testDroneState);
             testingInstructionSender.initiation("127.0.0.1",8890);
-            testingInstructionSender.performExistingMission(1);
+            testingInstructionSender.performExistingMission(3);
         } catch (Exception e) {
             e.printStackTrace();
         }

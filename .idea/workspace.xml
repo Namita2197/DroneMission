@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="" />
+    <list default="true" id="b0a5bc8a-5a40-446a-8a2b-f231f0062404" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DroneMission/Mission/DummyClientForward.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DroneMission/Mission/DummyClientForward.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Mission/MissionFlyForwardTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +48,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="MissionFileReader" />
+      <recent name="Message" />
       <recent name="Mission" />
       <recent name="Instruction" />
       <recent name="Controller" />
-      <recent name="Common" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Message" />
@@ -84,21 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InstructionSenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DroneMission" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.InstructionSenderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MissionFlyBackwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
@@ -114,31 +104,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShiftBackwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Instruction.*" />
+          <option name="PATTERN" value="Message.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Instruction" />
-      <option name="MAIN_CLASS_NAME" value="Instruction.ShiftBackwardTest" />
+      <option name="PACKAGE_NAME" value="Message" />
+      <option name="MAIN_CLASS_NAME" value="Message.StatusTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShiftForwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="parseCSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DroneMission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Instruction.*" />
+          <option name="PATTERN" value="MissionFileReader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Instruction" />
-      <option name="MAIN_CLASS_NAME" value="Instruction.ShiftForwardTest" />
+      <option name="PACKAGE_NAME" value="MissionFileReader" />
+      <option name="MAIN_CLASS_NAME" value="MissionFileReader.parseCSVTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="parseXMLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DroneMission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MissionFileReader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MissionFileReader" />
+      <option name="MAIN_CLASS_NAME" value="MissionFileReader.parseXMLTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,18 +151,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in DroneMission" />
-      <item itemvalue="JUnit.ShiftBackwardTest" />
-      <item itemvalue="JUnit.ShiftForwardTest" />
-      <item itemvalue="JUnit.InstructionSenderTest" />
       <item itemvalue="JUnit.MissionFlyBackwardTest" />
+      <item itemvalue="JUnit.StatusTest" />
+      <item itemvalue="JUnit.parseCSVTest" />
+      <item itemvalue="JUnit.parseXMLTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in DroneMission" />
+        <item itemvalue="JUnit.parseXMLTest" />
+        <item itemvalue="JUnit.parseCSVTest" />
+        <item itemvalue="JUnit.StatusTest" />
         <item itemvalue="JUnit.MissionFlyBackwardTest" />
-        <item itemvalue="JUnit.InstructionSenderTest" />
-        <item itemvalue="JUnit.ShiftForwardTest" />
-        <item itemvalue="JUnit.ShiftBackwardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +202,12 @@
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_updateFlyingInfo.ic" NAME="DroneStateTest.updateFlyingInfo Coverage Results" MODIFIED="1570134829158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/DroneMission$parseCSVTest.ic" NAME="parseCSVTest Coverage Results" MODIFIED="1570234208803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>MissionFileReader.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DroneMission$parseXMLTest.ic" NAME="parseXMLTest Coverage Results" MODIFIED="1570234376555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>MissionFileReader.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DroneMission$BatteryTest.ic" NAME="BatteryTest Coverage Results" MODIFIED="1570211404248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Instruction.*</FILTER>
     </SUITE>
@@ -208,6 +219,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/DroneMission$InstructionSenderTest_initiation.ic" NAME="InstructionSenderTest.initiation Coverage Results" MODIFIED="1570137148563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DroneMission$StatusTest.ic" NAME="StatusTest Coverage Results" MODIFIED="1570231715822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Message.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DroneMission$DroneStateTest_move.ic" NAME="DroneStateTest.move Coverage Results" MODIFIED="1570136171216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Common.*</FILTER>
