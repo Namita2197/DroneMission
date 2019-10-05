@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class ShiftBackwardTest {
     @Test
     void executeInstruction()  {
-        Thread dummyRequester =new Thread(new DummyRequesterFlip());
-        Thread dummyResponder =new Thread(new DummyResponderFlip());
+        Thread dummyRequester =new Thread(new DummyRequesterShiftBackward());
+        Thread dummyResponder =new Thread(new DummyResponderShiftBackward());
         dummyResponder.start();
         dummyRequester.start();
     }

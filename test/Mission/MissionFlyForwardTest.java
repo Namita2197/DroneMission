@@ -13,8 +13,9 @@ class MissionFlyForwardTest {
         DummyClientForward dummyClient=new DummyClientForward();
         Thread testingThread=new Thread(dummyServer);
         Thread testingThread2=new Thread(dummyClient);
-        testingThread.start();
         testingThread2.start();
+        testingThread.start();
+
     }
 }
 class DummyServerForward implements Runnable{

@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class ShiftForwardTest {
     @Test
     void executeInstruction()  {
-        Thread dummyRequester =new Thread(new DummyRequesterFlip());
-        Thread dummyResponder =new Thread(new DummyResponderFlip());
+        Thread dummyRequester =new Thread(new DummyRequesterShiftForward());
+        Thread dummyResponder =new Thread(new DummyResponderShiftForward());
         dummyResponder.start();
         dummyRequester.start();
 

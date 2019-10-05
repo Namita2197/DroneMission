@@ -10,15 +10,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class parseCSVTest {
     @Test
     public void  CSVTest(){
-        DummyServerXML dummyServer=new DummyServerXML();
-        DummyClientXML dummyClient=new DummyClientXML();
+        DummyServerCSV dummyServer=new DummyServerCSV();
+        DummyClientCSV dummyClient=new DummyClientCSV();
         Thread testingThread=new Thread(dummyServer);
         Thread testingThread2=new Thread(dummyClient);
         testingThread.start();
         testingThread2.start();
     }
 }
-class DummyServer implements Runnable{
+class DummyServerCSV implements Runnable{
 
     @Override
     public void run() {
@@ -34,7 +34,7 @@ class DummyServer implements Runnable{
         }
     }
 }
-class DummyClient implements Runnable{
+class DummyClientCSV implements Runnable{
     @Test
     @Override
     public void run() {
